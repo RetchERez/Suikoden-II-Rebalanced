@@ -163,15 +163,17 @@ All five Clive callbacks passed controlled MIPS tests. A separate 32-hour save f
 [IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/15-Tuta-Medicine.png[/IMG] [IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/16-Victory.png[/IMG][/CENTER]
 [/SPOILER]
 
-[CENTER][SIZE=5][COLOR=#368E7B][B]Credits & Feedback[/B][/COLOR][/SIZE][/CENTER]
+[CENTER][SIZE=5][COLOR=#368E7B][B]Special Thanks & Feedback[/B][/COLOR][/SIZE][/CENTER]
 
-By RetchERezzed, incorporating [URL=https://github.com/pyriell/gs2-bugfixes]Pyriel's signed negative-Kindness fix[/URL].
+[LIST]
+[*][URL=https://github.com/pyriell/gs2-bugfixes]Pyriel[/URL] for the original Kindness Rune fix
+[*]Cloudstrife7894
+[*]Dyne
+[/LIST]
 
 [CENTER][B]Full GS2 Bug Fix Patch v2.02.078 compatibility[/B][/CENTER]
 
 Default-profile combined image tested in Linux: overdue Radat, save/cold reload and Spider Slay twice through victory. Full pack remains optional and external. Linux build used upstream patch data; Windows installer and full campaign unverified. See README for patch order and limits.
-
-Thanks: Cloudstrife7894, Dyne
 
 For bugs, include emulator/version, location, party, equipment, runes, save origin, and reproduction steps.
 
