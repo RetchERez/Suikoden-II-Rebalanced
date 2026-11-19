@@ -3,6 +3,8 @@
 ## v1.1
 
 - Project title updated to Suikoden II: Rebalanced with the tested game patch unchanged
+- Added bounded Linux checks for a 108-star Suikoden I import and, on a separate late-game save, living Gremio and Tir's Banner fishing encounter
+- Replaced the captioned collage with an eight-photo 9:16 mosaic and supplied both spoiler-tag and open BBCode posts with paired screenshots
 
 The combat configuration is unchanged from v1.0
 

@@ -106,6 +106,14 @@ only documented text/UI-layout fields; it does not turn earlier bounded evidence
 new campaign certification. Current screenshots and their accompanying
 capture notes distinguish visible scenes from measured action effects.
 
+Additional Linux checks accepted a genuine 108-star Suikoden I save on both
+vanilla and v1.1 cold boots. The v1.1 growth/rune-slot table matched the patched
+image after import. On a separate genuine late-game imported save, normal
+controller input reached living Gremio's Banner blocker dialogue and Tir's
+fishing encounter. This is two separate checkpoint tests, not one uninterrupted
+playthrough from import. The remaining rescue quest, its boss and Gregminster
+return, plus the optional departure dialogue branch, remain unverified.
+
 Ready for public testing. Full campaign difficulty, every legal recruitment
 stage/loadout/Unite combination, endings and real hardware remain unverified.
 This is not a complete translation or the complete upstream retail bugfix suite.

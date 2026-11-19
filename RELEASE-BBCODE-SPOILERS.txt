@@ -127,7 +127,7 @@ Apply v1.1 to a clean original even when upgrading. The ZIP contains only the pa
 
 16 genuine Linux captures: locations, dialogue, menus, and battles. The portrait collage contains eight pictures. These save-based checkpoint visits include possible spoilers.
 
-Build, reconstruction, text, and selected native battle checks passed. A 108-star Suikoden I save imported correctly and kept the patched growth table. The later Gremio/Tir quest, full campaign, every loadout/Unite variant, and real hardware remain unverified.
+Build, reconstruction, text, and selected native battle checks passed. A 108-star Suikoden I save imported correctly and kept the patched growth table. A separate late-game save reached living Gremio and Tir's Banner fishing encounter normally. The remaining rescue quest, full campaign, every loadout/Unite variant, and real hardware remain unverified.
 
 [SPOILER="16 photos — menus, battles, dialogue, and locations"]
 [CENTER][B]Ryube Village & Sindar Ruins[/B]

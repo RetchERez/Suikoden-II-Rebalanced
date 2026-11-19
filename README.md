@@ -56,6 +56,8 @@ The existing Linux tooling suite passes 96 tests, and twelve new regression chec
 
 The gallery contains 16 varied photos and an eight-picture 9:16 portrait collage, freshly captured in native Linux PCSX-Redux on the exact v1.1 image. Private copies of downloaded cards and normal controller inputs cover menus, battles, dialogue, and early-to-late locations. These checkpoint visits include possible spoilers; capture notes distinguish visible scenes from measured action effects
 
+Additional Linux checks accepted a genuine 108-star Suikoden I save on both vanilla and v1.1 cold boots, with the patched growth/rune-slot table preserved after import. A separate downloaded late-game save reached living Gremio's Banner dialogue and Tir's fishing encounter through normal controller input. These are separate checkpoint tests; the remaining rescue quest, its boss, Gregminster return, and optional departure dialogue branch remain unverified
+
 This release is ready for public testing. A full campaign, every legal recruitment/loadout/Unite combination, endings, and real hardware remain unverified. The spelling review is not a claim of a complete retranslation or universal grammatical perfection
 
 ## Credits and feedback
