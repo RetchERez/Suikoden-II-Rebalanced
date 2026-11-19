@@ -1,0 +1,407 @@
+{
+  "image_sha256": "e193bd3d03c41ef59e50da57d23c78a70fae0138742582f53f4c10096f8fcfb3",
+  "platform": "Linux PCSX-Redux",
+  "photo_count": 16,
+  "unique_pixel_hashes": 16,
+  "photos": [
+    {
+      "file": "01-Ryube-Village.png",
+      "caption": "Ryube Village outside the inn",
+      "image_sha256": "e193bd3d03c41ef59e50da57d23c78a70fae0138742582f53f4c10096f8fcfb3",
+      "png_sha256": "677a4c7b5f95ff8170317a7c72a9cd8fefa83689ef2a83312fcd6b6e1b3d3355",
+      "pixel_sha256": "769da38121cf378d7096223709954130c2371a6e5c01edd9ff7d55b998cf22ea",
+      "game_pixels_modified": false,
+      "provenance": {
+        "stage": 1,
+        "native_capture_sha256": "151721b2c204849f48fd2ed78f5b0cb4329ca588d6f3e1ff7e9d287afa64f0f2",
+        "frame_metadata": {
+          "width": 320,
+          "height": 240,
+          "bpp": 0,
+          "frames": 3750,
+          "command": 16
+        },
+        "capture_method": "Fresh Linux cold boot, copied campaign card, normal controller input; no states or guest edits",
+        "image_sha256": "e193bd3d03c41ef59e50da57d23c78a70fae0138742582f53f4c10096f8fcfb3",
+        "original_card_sha256": "199269a1a90c88269e6767045840aa2a99d2681d8c578f4e653306b680836545",
+        "author_stage_tag": "Ryube; opening",
+        "source_author": "KoRnholio",
+        "source_url": "http://www.suikosource.com:80/games/gs2/saves/suikoden2_01.GME",
+        "method": "Fresh native Linux cold boot; ordinary downloaded card mount; normal pads/read-only capture; no states or guest writes"
+      }
+    },
+    {
+      "file": "02-Sindar-Ruins.png",
+      "caption": "Exploring the mossy steps of Sindar Ruins",
+      "image_sha256": "e193bd3d03c41ef59e50da57d23c78a70fae0138742582f53f4c10096f8fcfb3",
+      "png_sha256": "91710560baabfde2ba66baf7fddd6c0ac995e0485489ef128ef1336a19479a44",
+      "pixel_sha256": "2c6313b6f182dfeec17cb1e242cadcbbf1be869fd60e294d1caf0e12e76aa6e9",
+      "game_pixels_modified": false,
+      "provenance": {
+        "stage": 5,
+        "native_capture_sha256": "98ad0c8d9fba9a3b669bbc7e8adb49444cd23409383902028752fa510b4add26",
+        "frame_metadata": {
+          "width": 320,
+          "height": 240,
+          "bpp": 0,
+          "frames": 3175,
+          "command": 11
+        },
+        "capture_method": "Fresh Linux cold boot, copied campaign card, normal controller input; no states or guest edits",
+        "image_sha256": "e193bd3d03c41ef59e50da57d23c78a70fae0138742582f53f4c10096f8fcfb3",
+        "original_card_sha256": "264ed9837c5950e9a170c20068fdfc1ace809caeb333d5714db09718dcf3ef09",
+        "author_stage_tag": "Sindar Ruins; pre-Double Head",
+        "source_author": "KoRnholio",
+        "source_url": "http://www.suikosource.com:80/games/gs2/saves/suikoden2_05.GME",
+        "method": "Fresh native Linux cold boot; ordinary downloaded card mount; normal pads/read-only capture; no states or guest writes"
+      }
+    },
+    {
+      "file": "03-City-Street.png",
+      "caption": "A city street outside the inn",
+      "image_sha256": "e193bd3d03c41ef59e50da57d23c78a70fae0138742582f53f4c10096f8fcfb3",
+      "png_sha256": "d95d43d5e7f29c4284197831f976cbd16a15e9ab9fd15d1eef1030886f2b3c20",
+      "pixel_sha256": "bb048febc898887be5108d709ca2a8e645cd4a24c3af405249c124e5b2a0f05a",
+      "game_pixels_modified": false,
+      "provenance": {
+        "stage": 6,
+        "native_capture_sha256": "f6f7b5ba5bee2d40fd75c3f043eebecc5e67e93d08453bc5929df25b192bc0a0",
+        "frame_metadata": {
+          "width": 320,
+          "height": 240,
+          "bpp": 0,
+          "frames": 3790,
+          "command": 15
+        },
+        "capture_method": "Fresh Linux cold boot, copied campaign card, normal controller input; no states or guest edits",
+        "image_sha256": "e193bd3d03c41ef59e50da57d23c78a70fae0138742582f53f4c10096f8fcfb3",
+        "original_card_sha256": "d5efb02b1e66eb1cd6728b1bb67f604e64a485bc5675714ac5da8d355d6273e1",
+        "author_stage_tag": "Muse; pre-Gilbert battle",
+        "source_author": "KoRnholio",
+        "source_url": "http://www.suikosource.com:80/games/gs2/saves/suikoden2_06.GME",
+        "method": "Fresh native Linux cold boot; ordinary downloaded card mount; normal pads/read-only capture; no states or guest writes"
+      }
+    },
+    {
+      "file": "04-Cave-of-the-Wind.png",
+      "caption": "The entrance to Cave of the Wind",
+      "image_sha256": "e193bd3d03c41ef59e50da57d23c78a70fae0138742582f53f4c10096f8fcfb3",
+      "png_sha256": "28186155fe9fdc8eb4799c60761b1cc0acd63b7e5d212c251f8ce34251a152cd",
+      "pixel_sha256": "af1d99973dfa8ea2bc5e23d9cd2e5a1ed68b097442969ea2fd9b93756f3baf7b",
+      "game_pixels_modified": false,
+      "provenance": {
+        "stage": 7,
+        "native_capture_sha256": "d7f9a82db810414e6a375b9c04b51512f9939cae7017b27ad7bf85185d74ba38",
+        "frame_metadata": {
+          "width": 320,
+          "height": 240,
+          "bpp": 0,
+          "frames": 2940,
+          "command": 8
+        },
+        "capture_method": "Fresh Linux cold boot, copied campaign card, normal controller input; no states or guest edits",
+        "image_sha256": "e193bd3d03c41ef59e50da57d23c78a70fae0138742582f53f4c10096f8fcfb3",
+        "original_card_sha256": "8576732e52ab3e6b4fb3169b01826bd9fbdfd2e6bf8a5f618803cbe72482b885",
+        "author_stage_tag": "Cave of Wind entrance",
+        "source_author": "KoRnholio",
+        "source_url": "http://www.suikosource.com:80/games/gs2/saves/suikoden2_07.GME",
+        "method": "Fresh native Linux cold boot; ordinary downloaded card mount; normal pads/read-only capture; no states or guest writes"
+      }
+    },
+    {
+      "file": "05-Kuskus.png",
+      "caption": "Kuskus waterfront and stone bridge",
+      "image_sha256": "e193bd3d03c41ef59e50da57d23c78a70fae0138742582f53f4c10096f8fcfb3",
+      "png_sha256": "d634883f7156f54c3a65aef93539bc76cb8bca2b4970283a397be3f14a3e6946",
+      "pixel_sha256": "b20dfa4c635990e9b00a0a7ac004bcda21f9434fd8dbb0e8c9c67e5a35d748cd",
+      "game_pixels_modified": false,
+      "provenance": {
+        "stage": 9,
+        "native_capture_sha256": "60fe60b41b26ff5c58e964a5826b101ea7135023a67b62a6342e3e7f636ba17b",
+        "frame_metadata": {
+          "width": 320,
+          "height": 240,
+          "bpp": 0,
+          "frames": 5035,
+          "command": 29
+        },
+        "capture_method": "Fresh Linux cold boot, copied campaign card, normal controller input; no states or guest edits",
+        "image_sha256": "e193bd3d03c41ef59e50da57d23c78a70fae0138742582f53f4c10096f8fcfb3",
+        "original_card_sha256": "2d9ca0d44c19ba0a1ad7124ad7ddbc270016766da67f5695e1fa74759f77f074",
+        "author_stage_tag": "Kuskus; pre-Lakewest",
+        "source_author": "KoRnholio",
+        "source_url": "http://www.suikosource.com:80/games/gs2/saves/suikoden2_09.GME",
+        "method": "Fresh native Linux cold boot; ordinary downloaded card mount; normal pads/read-only capture; no states or guest writes"
+      }
+    },
+    {
+      "file": "06-Crom.png",
+      "caption": "Outside the stone inn in Crom",
+      "image_sha256": "e193bd3d03c41ef59e50da57d23c78a70fae0138742582f53f4c10096f8fcfb3",
+      "png_sha256": "589f564a3bbf1e3b4698d088a360cd4cfac9392423a008d4c5ffbc4bf867ae23",
+      "pixel_sha256": "7766aeb231562c48b0bbd4970be1d4dcaf7080225e50496e2ed6576ace5f68fb",
+      "game_pixels_modified": false,
+      "provenance": {
+        "stage": 17,
+        "native_capture_sha256": "f59aa9940371c3fdbdf08522fc110b7301c9aa73089ecef3ef621d29943d53a1",
+        "frame_metadata": {
+          "width": 320,
+          "height": 240,
+          "bpp": 0,
+          "frames": 3643,
+          "command": 16
+        },
+        "capture_method": "Fresh Linux cold boot, copied campaign card, normal controller input; no states or guest edits",
+        "image_sha256": "e193bd3d03c41ef59e50da57d23c78a70fae0138742582f53f4c10096f8fcfb3",
+        "original_card_sha256": "285be8dc4d021ed4929cff193d96d0611ca60675dbe09fe6c4950758e60cfbed",
+        "author_stage_tag": "Crom; pre-Tinto Mines",
+        "source_author": "KoRnholio",
+        "source_url": "http://suikosource.com:80/games/gs2/saves/suikoden2_17.GME",
+        "method": "Fresh native Linux cold boot; ordinary downloaded card mount; normal pads/read-only capture; no states or guest writes"
+      }
+    },
+    {
+      "file": "07-Greenhill.png",
+      "caption": "Greenhill garden paths",
+      "image_sha256": "e193bd3d03c41ef59e50da57d23c78a70fae0138742582f53f4c10096f8fcfb3",
+      "png_sha256": "85a45afe8187bb0e1721c5c2fee61351755b49ef6d6fba8ff6adefa04a57f260",
+      "pixel_sha256": "a42b6a2b4e54a3fd371ea2bfc19727026387e6df04d10461c15d21017add52d4",
+      "game_pixels_modified": false,
+      "provenance": {
+        "stage": 19,
+        "native_capture_sha256": "878ebb9cc527c2452f5f7e25b877c750ce121415fc22d9fb2e9a141f998f8ac0",
+        "frame_metadata": {
+          "width": 320,
+          "height": 240,
+          "bpp": 0,
+          "frames": 3140,
+          "command": 9
+        },
+        "capture_method": "Fresh Linux cold boot, copied campaign card, normal controller input; no states or guest edits",
+        "image_sha256": "e193bd3d03c41ef59e50da57d23c78a70fae0138742582f53f4c10096f8fcfb3",
+        "original_card_sha256": "8557cbd30d72e650ad410ae749a2d08b0af7c962ad4cdee7f8bf10918d48d2bd",
+        "author_stage_tag": "Greenhill; pre-dragon",
+        "source_author": "KoRnholio",
+        "source_url": "http://www.suikosource.com:80/games/gs2/saves/suikoden2_19.GME",
+        "method": "Fresh native Linux cold boot; ordinary downloaded card mount; normal pads/read-only capture; no states or guest writes"
+      }
+    },
+    {
+      "file": "08-LRenouille.png",
+      "caption": "Inside L'Renouille Castle",
+      "image_sha256": "e193bd3d03c41ef59e50da57d23c78a70fae0138742582f53f4c10096f8fcfb3",
+      "png_sha256": "c9023e01e60655cabda544dd406bcc97f91316606dee0baed9a56b31737ffd62",
+      "pixel_sha256": "9c2a929937e628af472d77db9ec02cef6736ad141791ff313055a51582a14fbf",
+      "game_pixels_modified": false,
+      "provenance": {
+        "stage": 22,
+        "native_capture_sha256": "b9272f409377a3a64c177cc4c24b548a4710db394315e113aef47c5e5ec2ac20",
+        "frame_metadata": {
+          "width": 320,
+          "height": 240,
+          "bpp": 0,
+          "frames": 3140,
+          "command": 9
+        },
+        "capture_method": "Fresh Linux cold boot, copied campaign card, normal controller input; no states or guest edits",
+        "image_sha256": "e193bd3d03c41ef59e50da57d23c78a70fae0138742582f53f4c10096f8fcfb3",
+        "original_card_sha256": "1152dee1696e330f32577d2440a42275e8b23b5c900cc716e9bc336e240215bf",
+        "author_stage_tag": "LRenouille; pre-Beast Rune",
+        "source_author": "KoRnholio",
+        "source_url": "http://www.suikosource.com:80/games/gs2/saves/suikoden2_22.GME",
+        "method": "Fresh native Linux cold boot; ordinary downloaded card mount; normal pads/read-only capture; no states or guest writes"
+      }
+    },
+    {
+      "file": "09-Mercenary-Soldier.png",
+      "caption": "The corrected Mercenary Soldier speaker label",
+      "image_sha256": "e193bd3d03c41ef59e50da57d23c78a70fae0138742582f53f4c10096f8fcfb3",
+      "png_sha256": "4ff68d6ee5bc386e386e93804ebea9df9cc82cbd80c418d12e5d77a5f1fc2f76",
+      "pixel_sha256": "8c39e5784c587b817af56a14a3df7d90483bd906780acc2d45c7d44c4ffffcff",
+      "game_pixels_modified": false,
+      "provenance": {
+        "stage": 3,
+        "native_capture_sha256": "da5c19dc9bb74312443c6799a62e547a74f1b4376e29bbe86a880df1a9179854",
+        "frame_metadata": {
+          "width": 320,
+          "height": 240,
+          "bpp": 0,
+          "frames": 5105,
+          "command": 27
+        },
+        "capture_method": "Fresh Linux cold boot, copied campaign card, normal controller input; no states or guest edits",
+        "image_sha256": "e193bd3d03c41ef59e50da57d23c78a70fae0138742582f53f4c10096f8fcfb3",
+        "original_card_sha256": "24e7a72434a0172baa0b7e3f05cb8b39bca817a9e4dd2f94cbce9dfd0aba6bbc",
+        "author_stage_tag": "Mercenary Fortress; pre-Toto",
+        "source_author": "KoRnholio",
+        "source_url": "http://suikosource.com:80/games/gs2/saves/suikoden2_03.GME",
+        "method": "Fresh native Linux cold boot; ordinary downloaded card mount; normal pads/read-only capture; no states or guest writes"
+      }
+    },
+    {
+      "file": "10-Headquarters-Dialogue.png",
+      "caption": "Apple reports Shu's promise at Headquarters",
+      "image_sha256": "e193bd3d03c41ef59e50da57d23c78a70fae0138742582f53f4c10096f8fcfb3",
+      "png_sha256": "702058a2512f90d167455cc2ddc0f03decc0d85e449008a2406f902909ef7d07",
+      "pixel_sha256": "85bacb808848cdbdd8c764eb5191ea4757b56f0040fb578ea679e43ab551eb4b",
+      "game_pixels_modified": false,
+      "provenance": {
+        "stage": 8,
+        "native_capture_sha256": "c2958eb710aab22e8deb8bb25d8db4b99f262f4243a15d3ebc1ff733479d3f09",
+        "frame_metadata": {
+          "width": 320,
+          "height": 240,
+          "bpp": 0,
+          "frames": 4450,
+          "command": 18
+        },
+        "capture_method": "Fresh Linux cold boot, copied campaign card, normal controller input; no states or guest edits",
+        "image_sha256": "e193bd3d03c41ef59e50da57d23c78a70fae0138742582f53f4c10096f8fcfb3",
+        "original_card_sha256": "40da650fdd34f36b13760ef642ed4deccfc528549c42f1f3531baeea8a5c648c",
+        "author_stage_tag": "HQ; Shu recruited",
+        "source_author": "KoRnholio",
+        "source_url": "http://suikosource.com:80/games/gs2/saves/suikoden2_08.GME",
+        "method": "Fresh native Linux cold boot; ordinary downloaded card mount; normal pads/read-only capture; no states or guest writes"
+      }
+    },
+    {
+      "file": "11-Equipment.png",
+      "caption": "Inspecting Riou's equipment in Sindar Ruins",
+      "image_sha256": "e193bd3d03c41ef59e50da57d23c78a70fae0138742582f53f4c10096f8fcfb3",
+      "png_sha256": "d753ce8da17cf6daacd46cb230a11375e7e490abbb7c6b4c3842eeab19235ead",
+      "pixel_sha256": "e781a4e3f8a41ca86d23890ee62d2b89379ae439cd9e2228a4debee6f3757e06",
+      "game_pixels_modified": false,
+      "provenance": {
+        "stage": 5,
+        "native_capture_sha256": "0896658a654fdb4dac6c881dfd0e6bd4d5983f32358d54a70331f71a96b0d9f7",
+        "frame_metadata": {
+          "width": 320,
+          "height": 240,
+          "bpp": 0,
+          "frames": 4410,
+          "command": 23
+        },
+        "capture_method": "Fresh Linux cold boot, copied campaign card, normal controller input; no states or guest edits",
+        "image_sha256": "e193bd3d03c41ef59e50da57d23c78a70fae0138742582f53f4c10096f8fcfb3",
+        "original_card_sha256": "264ed9837c5950e9a170c20068fdfc1ace809caeb333d5714db09718dcf3ef09",
+        "author_stage_tag": "Sindar Ruins; pre-Double Head",
+        "source_author": "KoRnholio",
+        "source_url": "http://www.suikosource.com:80/games/gs2/saves/suikoden2_05.GME",
+        "method": "Fresh native Linux cold boot; ordinary downloaded card mount; normal pads/read-only capture; no states or guest writes"
+      }
+    },
+    {
+      "file": "12-Potch-Menu.png",
+      "caption": "The field menu with spaced, capitalized Potch",
+      "image_sha256": "e193bd3d03c41ef59e50da57d23c78a70fae0138742582f53f4c10096f8fcfb3",
+      "png_sha256": "cb6c60e34e8a91bff58a6b5bc77d2db68d9723688d018808b2869014a4b09ee9",
+      "pixel_sha256": "5feecc903d41e0750cd12c2ed78892244f8ee613bed8e8acfd0e82a5ec9a6528",
+      "game_pixels_modified": false,
+      "provenance": {
+        "stage": 23,
+        "native_capture_sha256": "7d2a72a82625d98caea764c94d760338981467a2af7d4bf80356d7ec35ba221e",
+        "frame_metadata": {
+          "width": 320,
+          "height": 240,
+          "bpp": 0,
+          "frames": 3500,
+          "command": 11
+        },
+        "capture_method": "Fresh Linux cold boot, copied campaign card, normal controller input; no states or guest edits",
+        "image_sha256": "e193bd3d03c41ef59e50da57d23c78a70fae0138742582f53f4c10096f8fcfb3",
+        "original_card_sha256": "233fe6f9ef1d69e9cfe8c9fe1a8f725c8e4abaa2806120cbe14e57eabf940b79",
+        "author_stage_tag": "HQ; Beast Rune defeated",
+        "source_author": "KoRnholio",
+        "source_url": "http://www.suikosource.com:80/games/gs2/saves/suikoden2_23.GME",
+        "method": "Fresh native Linux cold boot; ordinary downloaded card mount; normal pads/read-only capture; no states or guest writes"
+      }
+    },
+    {
+      "file": "13-Blacksmith.png",
+      "caption": "Complete Potch labels in the blacksmith menu",
+      "image_sha256": "e193bd3d03c41ef59e50da57d23c78a70fae0138742582f53f4c10096f8fcfb3",
+      "png_sha256": "5349ac34ea6c0e15202350344bdff12fb75902fcc28ddd224b2fb7c51c00f768",
+      "pixel_sha256": "251817608e0164e9e7e72ba47dc121de16204760fe11856bd722b00072db5e1e",
+      "game_pixels_modified": false,
+      "provenance": {
+        "stage": 3,
+        "native_capture_sha256": "87f324f958d77e5193db0191c921984389e6f0dd1bb0aef2cf94c42d151f753c",
+        "frame_metadata": {
+          "width": 320,
+          "height": 240,
+          "bpp": 0,
+          "frames": 4382,
+          "command": 21
+        },
+        "capture_method": "Fresh Linux cold boot, copied campaign card, normal controller input; no states or guest edits",
+        "image_sha256": "e193bd3d03c41ef59e50da57d23c78a70fae0138742582f53f4c10096f8fcfb3",
+        "original_card_sha256": "24e7a72434a0172baa0b7e3f05cb8b39bca817a9e4dd2f94cbce9dfd0aba6bbc",
+        "author_stage_tag": "Mercenary Fortress; pre-Toto",
+        "source_author": "KoRnholio",
+        "source_url": "http://suikosource.com:80/games/gs2/saves/suikoden2_03.GME",
+        "method": "Fresh native Linux cold boot; ordinary downloaded card mount; normal pads/read-only capture; no states or guest writes"
+      }
+    },
+    {
+      "file": "14-Spider-Slay-Help.png",
+      "caption": "Spider Slay's corrected damage and repeat-use help",
+      "image_sha256": "e193bd3d03c41ef59e50da57d23c78a70fae0138742582f53f4c10096f8fcfb3",
+      "png_sha256": "b9e4b45a9d1790fb7ceef7aa6bf9d1571aedc3f0bc2d44260c7ca3b37e65b999",
+      "pixel_sha256": "0a92e3d11672c1ea4e13b5f0937b33067aab3d32a540c25ff8af6f8a4ad3adb7",
+      "game_pixels_modified": false,
+      "provenance": {
+        "case": "shin",
+        "command": 120,
+        "frames": 6678,
+        "native_capture_sha256": "950f2b78e6b454c5d74a47dc44e10bad322fe95993e17e1fe698c8d7119ad15d"
+      }
+    },
+    {
+      "file": "15-Tuta-Medicine.png",
+      "caption": "Tuta after automatic Medicine healing",
+      "image_sha256": "e193bd3d03c41ef59e50da57d23c78a70fae0138742582f53f4c10096f8fcfb3",
+      "png_sha256": "e10ec02a0fb2ed6d9b2a861c11707ddf8a19d9d3e1243c9f5b201caf9767852c",
+      "pixel_sha256": "7b8e919a3b7de40e9362f29cbdbbb419e5bba87543277fb2a4d0786712edbb00",
+      "game_pixels_modified": false,
+      "provenance": {
+        "case": "tuta",
+        "command": 119,
+        "frames": 8238,
+        "native_capture_sha256": "f1e33cf3c0d073899cacd82cf5789fba2eefac66e6f6016e6f875293d7358b49"
+      }
+    },
+    {
+      "file": "16-Victory.png",
+      "caption": "Victory and the ordinary battle reward sequence",
+      "image_sha256": "e193bd3d03c41ef59e50da57d23c78a70fae0138742582f53f4c10096f8fcfb3",
+      "png_sha256": "14537408a7be00e06781d9cef650f18da5f49a804f96401deea58b50ef73d0b7",
+      "pixel_sha256": "5e1262aeadcb36826201008a513e27592562162e0a302addbfef1bcf85b6f8a4",
+      "game_pixels_modified": false,
+      "provenance": {
+        "case": "shin",
+        "command": 180,
+        "frames": 9968,
+        "native_capture_sha256": "59d74cfa792efa3c11ff9bba3436cf864988e9f9239c531d06ac0998522941d0"
+      }
+    }
+  ],
+  "collage": {
+    "file": "Suikoden-II-Combat-Rebalanced-v1.1-Collage.png",
+    "width": 1440,
+    "height": 2560,
+    "aspect_ratio": "9:16",
+    "panels": 8,
+    "photo_indices": [
+      1,
+      4,
+      7,
+      9,
+      12,
+      13,
+      14,
+      16
+    ],
+    "panels_pixel_verified": true,
+    "sha256": "279e16fa88ba966f61be389c7431daa4835b9b28d2dfb0efc88e0df9ffd578c2"
+  }
+}

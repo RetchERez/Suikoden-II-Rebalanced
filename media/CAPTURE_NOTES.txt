@@ -1,0 +1,31 @@
+SUIKODEN II: COMBAT REBALANCED v1.1 - FINAL GALLERY
+
+16 standalone photos plus one 9:16 portrait collage containing eight selected
+photos. All images were freshly captured from the final build in native Linux
+PCSX-Redux. Collage dimensions: 1440 x 2560. Its eight panels are exact 2x pixel
+repetitions, with captions outside; each panel was compared to its original.
+The standalone images retain the original 320x240 game pixels, without any
+painting, AI generation, retouching, sharpening, cropping or replacement.
+
+Normal cold boots and controller input used private copies of downloaded
+campaign cards. No game/party/inventory/story/RAM edits or state loads were
+used to make these photos. Cards had the documented growth/slot migration;
+their history before download is unknown. Some supplied saves have high stats
+or maximum money. Those are checkpoint contents, not evidence of a continuous
+campaign or new-game progression. KoRnholio/Suikosource campaign card sources
+are identified by source URL and hash in the per-photo provenance.
+
+The photos intentionally mix exploration, dialogue, equipment, currency,
+personal-rune menus, battle continuation and victory. Later locations may be
+spoilers. Image12 shows the maximum-money field menu after the Potch spacing
+repair. Image13 shows complete blacksmith currency and price labels after the
+constructor and later resize repairs. Image14 shows corrected Spider Slay help;
+the recorded native route executes it successfully twice in the same battle.
+Image15 shows Tuta's HP after automatic Medicine; its numeric trace establishes
+95 -> 301 HP and one Mega Medicine charge consumed, 7 -> 6. It is not a capture
+of the entire heal animation. Image16 shows ordinary native battle victory.
+The four rune/Medicine capture routes complete victory and return to the field.
+
+Snapshots and selected native routes do not certify every balance combination,
+every dialogue rendering, a full uninterrupted campaign, or real hardware.
+No ROM, BIOS, emulator, memory card, RAM dump or save state is included.
