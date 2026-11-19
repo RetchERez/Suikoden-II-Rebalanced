@@ -43,11 +43,15 @@ The [16-photo gallery](media/README.md) and photos-only eight-picture 9:16 colla
 
 ![Eight-photo portrait collage captured on v1.1](media/Suikoden-II-Rebalanced-v1.1-Photo-Collage.png)
 
-## Optional external bug-fix pack
+## Full GS2 Bug Fix Patch v2.02.078 compatibility
 
-Rebalanced bundles only its existing standalone Kindness repair from Pyriel, not the complete GS2 Bug Fix Patch. The [per-file compatibility audit](COMPATIBILITY.md) confirms default upstream composition preserves our edits; a combined rebuilt image has not been emulated
+The full default profile was combined with v1.2 and tested in native Linux PCSX-Redux: overdue Radat progression, normal post-event save and cold reload, retained quest progress and party, field movement, and two Spider Slay uses in one battle followed by victory and field return
 
-Apply **clean original → Rebalanced → upstream bugfix tool**, keeping Kindness set to **Penalty**. The **No Penalty** option intentionally overrides that behavior. Our clean-source xdelta does not accept an already bugfix-patched image
+All 32 default options were applied, including music repairs, Kindness Penalty and the default text passes. An independent check verified every file, all 17 disc-address tables, checksums and all 1285 Rebalanced edits
+
+The private combined image used a Linux builder with the shipped patch data. The upstream Windows GUI/CD builder could not run under WSL1 and is not certified. Full campaign, every upstream fix and alternate option combinations remain unverified
+
+The standalone Rebalanced patch is unchanged and does not bundle the full pack. Apply **clean original -> Rebalanced -> upstream bug-fix tool**, keeping **Kindness Penalty**. See [COMPATIBILITY.md](COMPATIBILITY.md) for evidence and limits
 
 ## Credits and feedback
 

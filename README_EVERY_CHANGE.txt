@@ -7347,3 +7347,30 @@ Correctly migrated v0.99/v1.0 saves need no additional table migration for v1.2.
 Linux tests and selected downloaded-save routes are bounded evidence.
 Full campaign difficulty, every legal recruitment/loadout/Unite scenario,
 endings and real hardware remain outside the completed verification scope.
+
+12. Full GS2 Bug Fix Patch v2.02.078 compatibility
+
+The full default bug-fix profile was combined with v1.2 and tested in native
+Linux PCSX-Redux: overdue Radat progression, ordinary post-event save and fresh
+cold reload, retained quest flags/party, field movement, and Shin using Spider
+Slay twice in one battle followed by victory and return to the field.
+
+The private Linux-built combination applies all 32 default options (35 PPF
+files plus the Godspeed/Minotaur/Circlet text passes), keeping Kindness Penalty.
+Independent checks verify all 1090 file payloads, all 17 disc-address tables,
+changed-sector checksums and all 1285 Rebalanced edits. The standalone patch
+and balance numbers are unchanged. The full external bug-fix pack is optional
+and is not bundled in Rebalanced; only our existing Kindness repair is included.
+
+The combined image was built directly in Linux from the shipped patch data.
+The upstream Windows GUI/CD builder could not run in this WSL1 environment,
+so its execution is not certified. These are bounded combined-image checks;
+not every upstream fix, option combination or full campaign was playtested.
+
+Apply clean original -> Rebalanced -> upstream bug-fix tool, keeping Kindness
+set to Penalty. Our xdelta requires the clean original and cannot be applied
+to an already bug-fix-patched image. No Penalty intentionally overrides our
+Kindness behavior. Keep image/save backups and use normal saves, not old states.
+Upstream: https://github.com/pyriell/gs2-bugfixes
+Details: https://github.com/RetchERez/Suikoden-II-Rebalanced/blob/v1.2-compatibility/COMPATIBILITY.md
+

@@ -6,11 +6,14 @@
 - Kept the normal game clock, story prerequisites, one-time flags and all v1.1 combat/text/UI edits unchanged
 - Verified all five callback machine-code paths in controlled Linux CPU tests and a native same-save overtime Radat comparison
 - Verified ordinary post-event save and cold-reload persistence
-- Added a per-file compatibility audit against Pyriel's default bugfix options without importing the full collection
+- **Full GS2 Bug Fix Patch v2.02.078 compatibility**: verified the combined default profile in Linux, including overdue Radat, post-event save/cold reload and repeat Spider Slay through victory
+- Independently verified all combined file payloads, disc-address tables, checksums and retention of all 1285 Rebalanced edits
+- The combined test uses a Linux builder with upstream patch data; Windows GUI/CD-builder execution, all upstream fixes and alternate options are not certified
+- Documentation and v1.2 ZIP readmes refreshed after compatibility testing; the standalone xdelta patch is unchanged
 - Retained the existing standalone Kindness Penalty fix; the optional external No Penalty variant intentionally overrides it
 - Updated the full 1285-edit ledger, save caveats and both compact BBCode posts
 
-Existing failed quest flags are not reset. The rest of the Gremio/Tir quest remains deferred. Combined bugfix-image gameplay and a full v1.2 campaign remain unverified
+Existing failed quest flags are not reset. The rest of the Gremio/Tir quest remains deferred. A full v1.2 campaign remains unverified
 
 ## v1.1
 

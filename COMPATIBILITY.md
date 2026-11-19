@@ -1,10 +1,24 @@
-# Pyriell bugfix compatibility audit for Rebalanced v1.2
+# Full GS2 Bug Fix Patch v2.02.078 compatibility
 
 Audited v1.2 BIN: `6202e1b7ace94d75f2cce162e5391bbf8ccc6720c484fe98df3b6984904cfabc`
 
 Source: [Pyriell gs2-bugfixes 2.02.078](https://github.com/pyriell/gs2-bugfixes/blob/e657ecafebdad2ed4c8e9031a8ab982fd506bf58/patcher.lua), revision `e657ecafebdad2ed4c8e9031a8ab982fd506bf58`. Local repository was clean and `git ls-remote origin HEAD` matched that revision.
 
-This is a byte-level and private in-memory per-file composition audit. No upstream fixes were applied to our image, no combined ISO was built, and no combined-image gameplay is certified.
+The original byte-level audit below is now supplemented by a private combined-image build and native Linux tests. The standalone Rebalanced patch still does not bundle the full pack
+
+## Combined-image Linux verification
+
+- Exact default profile: 32 selected options, 35 shipped PPFs, Kindness Penalty, Godspeed/Minotaur/Circlet text passes, including the full music repair
+- Combined BIN SHA-256: `3c037b9892875ed39c37e331c0e119ca1a103503310e88858a53c00e628ff6da`; the image remains private
+- Independently verified all 1090 file payloads, all 17 tables with 1090 size/LBA entries, all 1285 Rebalanced spans and every changed-sector checksum; no file extents overlap
+- Three files grow: VF05 by 176 bytes within its existing allocation, UWASA1/2 by 2521 bytes each and relocated into verified trailing padding with ISO records and all internal tables updated
+- Native PCSX-Redux cold boot and copied-save load, overdue Radat event progression and aftercare, ordinary Hilda save, fresh cold reload preserving quest flags/party, and working field movement
+- Separate native battle: Shin's Spider Slay executed twice in the same battle, each removing120 enemy HP, followed by victory and field return
+- All source images and input cards preserved; normal pad input and read-only observation, with no guest-memory edits or save-state loads; no screenshots were captured for these new tests
+
+This combined image was built directly in Linux from the shipped default patch data. The upstream Windows GUI/CD builder failed to run in WSL1, so these tests do not certify that installer execution or its exact output layout. All raw media retain their original disc extents in the Linux test build. The standard patch order remains clean original -> Rebalanced -> upstream tool, with Kindness Penalty
+
+These are bounded compatibility checks. They do not playtest every upstream repair, every optional configuration, a full campaign or real hardware. RetroAchievements compatibility is not certified
 
 ## Result
 
