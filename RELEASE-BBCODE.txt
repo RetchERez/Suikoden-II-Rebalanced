@@ -1,13 +1,13 @@
-[CENTER][SIZE=7][COLOR=#368E7B][B]Suikoden II: Combat Rebalanced v1.1[/B][/COLOR][/SIZE]
+[CENTER][SIZE=7][COLOR=#368E7B][B]Suikoden II: Rebalanced v1.1[/B][/COLOR][/SIZE]
 [B]By RetchERezzed[/B]
 Combat rebalance and spelling cleanup for the original PlayStation release
 
-[IMG width="720px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Combat-Rebalanced/v1.1/media/Suikoden-II-Combat-Rebalanced-v1.1-Collage.png[/IMG]
+[IMG width="720px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/Suikoden-II-Rebalanced-v1.1-Collage.png[/IMG]
 
-[SIZE=5][B][URL=https://github.com/RetchERez/Suikoden-II-Combat-Rebalanced/releases/download/v1.1/Suikoden-II-Combat-Rebalanced-v1.1.zip]Download v1.1[/URL][/B][/SIZE]
-[URL=https://github.com/RetchERez/Suikoden-II-Combat-Rebalanced]GitHub[/URL] · [URL=https://github.com/RetchERez/Suikoden-II-Combat-Rebalanced/blob/v1.1/README_EVERY_CHANGE.txt]Every Change[/URL] · [URL=https://github.com/RetchERez/Suikoden-II-Combat-Rebalanced/tree/v1.1/media]Screenshots & Test Notes[/URL][/CENTER]
+[SIZE=5][B][URL=https://github.com/RetchERez/Suikoden-II-Rebalanced/releases/download/v1.1/Suikoden-II-Rebalanced-v1.1.zip]Download v1.1[/URL][/B][/SIZE]
+[URL=https://github.com/RetchERez/Suikoden-II-Rebalanced]GitHub[/URL] · [URL=https://github.com/RetchERez/Suikoden-II-Rebalanced/blob/v1.1-rebalanced/README_EVERY_CHANGE.txt]Every Change[/URL] · [URL=https://github.com/RetchERez/Suikoden-II-Rebalanced/tree/v1.1-rebalanced/media]Screenshots & Test Notes[/URL][/CENTER]
 
-Hey everyone, Suikoden II: Combat Rebalanced v1.1 is ready for public testing. I made this to give more of the roster a useful place in a party, improve underused Unites, and make several personal runes useful beyond a single action.
+Hey everyone, Suikoden II: Rebalanced v1.1 is ready for public testing. I made this to give more of the roster a useful place in a party, improve underused Unites, and make several personal runes useful beyond a single action.
 
 The changes focus on character growth, rune access, personal runes, and Unites. v1.1 also fixes stale rune-menu descriptions and adds a reviewed spelling pass across the readable game text. The combat values are the same as the previous v1.0 configuration, which remains available as the earlier release.
 
@@ -107,7 +107,7 @@ The change list shows the actual before-and-after wording. This is a spelling an
 [B]Required game: your own legally sourced, untouched USA Suikoden II BIN/CUE — SLUS-00958[/B]
 
 [LIST]
-[*]Download [B]Suikoden-II-Combat-Rebalanced-v1.1.zip[/B] and extract it
+[*]Download [B]Suikoden-II-Rebalanced-v1.1.zip[/B] and extract it
 [*]Check your original BIN against the size and SHA-256 in [B]README.txt[/B]
 [*]Use [URL=https://github.com/jmacd/xdelta/releases]xdelta3[/URL] to apply the patch to your original BIN and create a separate patched BIN
 [*]Copy your original CUE and update its FILE entry to point to the patched BIN, following the readme
@@ -124,52 +124,52 @@ The 16 photos mix menus, battles, dialogue, and early-to-late campaign locations
 
 [SPOILER="16 photos — menus, battles, dialogue, and locations"]
 [B]Ryube Village outside the inn[/B]
-[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Combat-Rebalanced/v1.1/media/01-Ryube-Village.png[/IMG][/CENTER]
+[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/01-Ryube-Village.png[/IMG][/CENTER]
 
 [B]Exploring the mossy steps of Sindar Ruins[/B]
-[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Combat-Rebalanced/v1.1/media/02-Sindar-Ruins.png[/IMG][/CENTER]
+[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/02-Sindar-Ruins.png[/IMG][/CENTER]
 
 [B]A city street outside the inn[/B]
-[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Combat-Rebalanced/v1.1/media/03-City-Street.png[/IMG][/CENTER]
+[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/03-City-Street.png[/IMG][/CENTER]
 
 [B]The entrance to Cave of the Wind[/B]
-[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Combat-Rebalanced/v1.1/media/04-Cave-of-the-Wind.png[/IMG][/CENTER]
+[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/04-Cave-of-the-Wind.png[/IMG][/CENTER]
 
 [B]Kuskus waterfront and stone bridge[/B]
-[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Combat-Rebalanced/v1.1/media/05-Kuskus.png[/IMG][/CENTER]
+[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/05-Kuskus.png[/IMG][/CENTER]
 
 [B]Outside the stone inn in Crom[/B]
-[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Combat-Rebalanced/v1.1/media/06-Crom.png[/IMG][/CENTER]
+[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/06-Crom.png[/IMG][/CENTER]
 
 [B]Greenhill garden paths[/B]
-[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Combat-Rebalanced/v1.1/media/07-Greenhill.png[/IMG][/CENTER]
+[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/07-Greenhill.png[/IMG][/CENTER]
 
 [B]Inside L'Renouille Castle[/B]
-[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Combat-Rebalanced/v1.1/media/08-LRenouille.png[/IMG][/CENTER]
+[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/08-LRenouille.png[/IMG][/CENTER]
 
 [B]The corrected Mercenary Soldier speaker label[/B]
-[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Combat-Rebalanced/v1.1/media/09-Mercenary-Soldier.png[/IMG][/CENTER]
+[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/09-Mercenary-Soldier.png[/IMG][/CENTER]
 
 [B]Apple reports Shu's promise at Headquarters[/B]
-[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Combat-Rebalanced/v1.1/media/10-Headquarters-Dialogue.png[/IMG][/CENTER]
+[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/10-Headquarters-Dialogue.png[/IMG][/CENTER]
 
 [B]Inspecting Riou's equipment in Sindar Ruins[/B]
-[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Combat-Rebalanced/v1.1/media/11-Equipment.png[/IMG][/CENTER]
+[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/11-Equipment.png[/IMG][/CENTER]
 
 [B]The field menu with spaced, capitalized Potch[/B]
-[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Combat-Rebalanced/v1.1/media/12-Potch-Menu.png[/IMG][/CENTER]
+[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/12-Potch-Menu.png[/IMG][/CENTER]
 
 [B]Complete Potch labels in the blacksmith menu[/B]
-[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Combat-Rebalanced/v1.1/media/13-Blacksmith.png[/IMG][/CENTER]
+[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/13-Blacksmith.png[/IMG][/CENTER]
 
 [B]Spider Slay's corrected damage and repeat-use help[/B]
-[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Combat-Rebalanced/v1.1/media/14-Spider-Slay-Help.png[/IMG][/CENTER]
+[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/14-Spider-Slay-Help.png[/IMG][/CENTER]
 
 [B]Tuta after automatic Medicine healing[/B]
-[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Combat-Rebalanced/v1.1/media/15-Tuta-Medicine.png[/IMG][/CENTER]
+[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/15-Tuta-Medicine.png[/IMG][/CENTER]
 
 [B]Victory and the ordinary battle reward sequence[/B]
-[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Combat-Rebalanced/v1.1/media/16-Victory.png[/IMG][/CENTER]
+[CENTER][IMG width="640px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/16-Victory.png[/IMG][/CENTER]
 
 [/SPOILER]
 
@@ -180,5 +180,5 @@ Rebalance by RetchERezzed. The negative-Kindness repair incorporates [URL=https:
 
 If you try it, let me know which characters and Unites you used, where the difficulty felt right, and where a role still felt weak or too strong. For bugs, include your emulator/version, location, party, equipment, runes, and the steps that triggered the problem. Screenshots of any remaining text issue are welcome.
 
-[CENTER][B][URL=https://github.com/RetchERez/Suikoden-II-Combat-Rebalanced/releases/download/v1.1/Suikoden-II-Combat-Rebalanced-v1.1.zip]Download Suikoden II: Combat Rebalanced v1.1[/URL][/B]
-[URL=https://github.com/RetchERez/Suikoden-II-Combat-Rebalanced/releases/tag/v1.1]Release Page[/URL] · [URL=https://github.com/RetchERez/Suikoden-II-Combat-Rebalanced/blob/v1.1/README_EVERY_CHANGE.txt]Complete Change List[/URL][/CENTER]
+[CENTER][B][URL=https://github.com/RetchERez/Suikoden-II-Rebalanced/releases/download/v1.1/Suikoden-II-Rebalanced-v1.1.zip]Download Suikoden II: Rebalanced v1.1[/URL][/B]
+[URL=https://github.com/RetchERez/Suikoden-II-Rebalanced/releases/tag/v1.1]Release Page[/URL] · [URL=https://github.com/RetchERez/Suikoden-II-Rebalanced/blob/v1.1-rebalanced/README_EVERY_CHANGE.txt]Complete Change List[/URL][/CENTER]

@@ -1,4 +1,4 @@
-SUIKODEN II: COMBAT REBALANCED v1.1
+SUIKODEN II: REBALANCED v1.1
 By RetchERezzed
 
 ABOUT THE PATCH
@@ -25,7 +25,7 @@ Two Chinchirorin windows shift eight pixels left to avoid overlapping frames.
 The v1.0 combat configuration is unchanged.
 
 This ZIP contains exactly:
-  Suikoden-II-Combat-Rebalanced-v1.1.xdelta
+  Suikoden-II-Rebalanced-v1.1.xdelta
   README.txt
   README_EVERY_CHANGE.txt
 
@@ -54,15 +54,15 @@ Apply the patch to the BIN, using a NEW destination filename. Substitute your
 actual original path in these examples. Keep the original untouched.
 
 Linux, with xdelta3 on PATH:
-xdelta3 -d -s "original.bin" "Suikoden-II-Combat-Rebalanced-v1.1.xdelta" "Suikoden II Combat Rebalanced v1.1.bin"
+xdelta3 -d -s "original.bin" "Suikoden-II-Rebalanced-v1.1.xdelta" "Suikoden II Rebalanced v1.1.bin"
 
 Windows PowerShell, with xdelta3.exe in the extracted directory:
-.\xdelta3.exe -d -s "original.bin" "Suikoden-II-Combat-Rebalanced-v1.1.xdelta" "Suikoden II Combat Rebalanced v1.1.bin"
+.\xdelta3.exe -d -s "original.bin" "Suikoden-II-Rebalanced-v1.1.xdelta" "Suikoden II Rebalanced v1.1.bin"
 
 Verify the resulting BIN against the v1.1 SHA-256 below. Copy your original
 CUE to a separate CUE beside the new BIN. In the copied CUE only, change
 the FILE entry to:
-FILE "Suikoden II Combat Rebalanced v1.1.bin" BINARY
+FILE "Suikoden II Rebalanced v1.1.bin" BINARY
 
 Preserve all original TRACK and INDEX lines. Open that copied CUE in your
 emulator. A new game is recommended for the complete rebalance.

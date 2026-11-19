@@ -2,7 +2,7 @@
 
 16 genuine photos of menus, battles, dialogue, and locations, plus an eight-picture 9:16 portrait collage
 
-![Eight-picture portrait collage](Suikoden-II-Combat-Rebalanced-v1.1-Collage.png)
+![Eight-picture portrait collage](Suikoden-II-Rebalanced-v1.1-Collage.png)
 
 **Ryube Village outside the inn**
 

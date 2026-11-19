@@ -2,6 +2,8 @@
 
 ## v1.1
 
+- Project title updated to Suikoden II: Rebalanced with the tested game patch unchanged
+
 The combat configuration is unchanged from v1.0
 
 - Fixed 177 stale Trick, Groundhog, and Spider Slay descriptions across 59 resources, covering field, shop, and post-battle menu copies

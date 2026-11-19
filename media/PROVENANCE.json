@@ -386,7 +386,7 @@
     }
   ],
   "collage": {
-    "file": "Suikoden-II-Combat-Rebalanced-v1.1-Collage.png",
+    "file": "Suikoden-II-Rebalanced-v1.1-Collage.png",
     "width": 1440,
     "height": 2560,
     "aspect_ratio": "9:16",
@@ -402,6 +402,7 @@
       16
     ],
     "panels_pixel_verified": true,
-    "sha256": "279e16fa88ba966f61be389c7431daa4835b9b28d2dfb0efc88e0df9ffd578c2"
-  }
+    "sha256": "1f6d12dcead16c5483b09311a5ac5c7bf8c41d5fa4752aef757165ff8a7229bc"
+  },
+  "project_title": "Suikoden II: Rebalanced"
 }
