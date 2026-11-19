@@ -2,9 +2,9 @@
 
 A combat rebalance and spelling cleanup for the original USA PlayStation release, by RetchERezzed
 
-**[Download v1.1](https://github.com/RetchERez/Suikoden-II-Rebalanced/releases/download/v1.1/Suikoden-II-Rebalanced-v1.1.zip)** · [Installation](README.txt) · [Every change](README_EVERY_CHANGE.txt) · [Screenshots and capture notes](media/README.md)
+**[Download v1.1](https://github.com/RetchERez/Suikoden-II-Rebalanced/releases/download/v1.1/Suikoden-II-Rebalanced-v1.1.zip)** Â· [Installation](README.txt) Â· [Every change](README_EVERY_CHANGE.txt) Â· [Screenshots and capture notes](media/README.md)
 
-![Eight Linux captures in a 9:16 portrait collage](media/Suikoden-II-Rebalanced-v1.1-Collage.png)
+![Eight Linux captures in a 9:16 portrait collage](media/Suikoden-II-Rebalanced-v1.1-Photo-Collage.png)
 
 The rebalance gives more of the roster a useful role through selected growth improvements, earlier rune access, repeatable personal runes, and stronger underused Unites
 

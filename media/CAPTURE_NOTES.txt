@@ -2,8 +2,11 @@ SUIKODEN II: REBALANCED v1.1 - FINAL GALLERY
 
 16 standalone photos plus one 9:16 portrait collage containing eight selected
 photos. All images were freshly captured from the final build in native Linux
-PCSX-Redux. Collage dimensions: 1440 x 2560. Its eight panels are exact 2x pixel
-repetitions, with captions outside; each panel was compared to its original.
+PCSX-Redux. The photos-only collage is 1080 x 1920, with no added text,
+logos, borders or padding. Eight genuine photos fill its entire canvas.
+Nearest-neighbor resizing preserves source pixel colors. The large Greenhill
+panel has a narrow side crop; the other seven panels retain their full frames.
+Exact panel rectangles, resize dimensions and crop are in PROVENANCE.json.
 The standalone images retain the original 320x240 game pixels, without any
 painting, AI generation, retouching, sharpening, cropping or replacement.
 

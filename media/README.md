@@ -1,8 +1,8 @@
 # Screenshot gallery
 
-16 genuine photos of menus, battles, dialogue, and locations, plus an eight-picture 9:16 portrait collage
+16 genuine photos of menus, battles, dialogue, and locations, plus a photos-only eight-picture 9:16 portrait collage
 
-![Eight-picture portrait collage](Suikoden-II-Rebalanced-v1.1-Collage.png)
+![Eight-picture portrait collage](Suikoden-II-Rebalanced-v1.1-Photo-Collage.png)
 
 **Ryube Village outside the inn**
 
@@ -68,6 +68,6 @@
 
 ![Victory and the ordinary battle reward sequence](16-Victory.png)
 
-[Capture notes](CAPTURE_NOTES.txt) · [Provenance and hashes](PROVENANCE.json)
+[Capture notes](CAPTURE_NOTES.txt) Â· [Provenance and hashes](PROVENANCE.json)
 
 Save-based checkpoint visits, with possible spoilers; not an uninterrupted campaign certification

@@ -2,7 +2,7 @@
 [B]By RetchERezzed[/B]
 More party choices, useful runes, stronger Unites
 
-[IMG width="720px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/Suikoden-II-Rebalanced-v1.1-Collage.png[/IMG]
+[IMG width="720px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-photos/media/Suikoden-II-Rebalanced-v1.1-Photo-Collage.png[/IMG]
 
 [SIZE=5][B][URL=https://github.com/RetchERez/Suikoden-II-Rebalanced/releases/download/v1.1/Suikoden-II-Rebalanced-v1.1.zip]Download v1.1[/URL][/B][/SIZE]
 [URL=https://github.com/RetchERez/Suikoden-II-Rebalanced]GitHub[/URL] · [URL=https://github.com/RetchERez/Suikoden-II-Rebalanced/releases/download/v1.1/Suikoden-II-Rebalanced-v1.1-Every-Change.txt]Every Change[/URL][/CENTER]
@@ -26,7 +26,6 @@ A USA PlayStation rebalance, with v1.1 menu, spelling, and Potch fixes.
 
 Growth changes affect future level gains; existing earned stats stay as saved.
 
-[SPOILER="All 22 characters with growth adjustments"]
 [LIST]
 [*][B]Shin[/B] HP and speed
 [*][B]Tomo[/B] HP and protection
@@ -51,7 +50,6 @@ Growth changes affect future level gains; existing earned stats stay as saved.
 [*][B]Hai Yo[/B] Strength and dexterity
 [*][B]Hoi[/B] Strength, protection, and HP
 [/LIST]
-[/SPOILER]
 
 [CENTER][B]Head Rune Slot Unlocks[/B][/CENTER]
 
@@ -74,7 +72,6 @@ Growth changes affect future level gains; existing earned stats stay as saved.
 
 Stored damage coefficients are shown below. Defense, targeting, status, and recoil rules still apply.
 
-[SPOILER="All 14 Unite families with coefficient increases"]
 [LIST]
 [*]Bandit Attack: 150% → 175%
 [*]Beastmaster Attack: 150% → 175%
@@ -92,7 +89,6 @@ Stored damage coefficients are shown below. Defense, targeting, status, and reco
 [*]Winger Attack: 150% → 175%
 [/LIST]
 The Bandit Attack Cup of the Oath branches also change from 200% to 225%. The 100 Kobold damage coefficient remains at its original 300%, with its stale description corrected.
-[/SPOILER]
 
 [CENTER][SIZE=5][COLOR=#368E7B][B]New in v1.1[/B][/COLOR][/SIZE][/CENTER]
 
@@ -129,56 +125,29 @@ Apply v1.1 to a clean original even when upgrading. The ZIP contains only the pa
 
 Build, reconstruction, text, and selected native battle checks passed. A 108-star Suikoden I save imported correctly and kept the patched growth table. The later Gremio/Tir quest, full campaign, every loadout/Unite variant, and real hardware remain unverified.
 
-[SPOILER="16 photos — menus, battles, dialogue, and locations"]
-[CENTER][B]Ryube Village outside the inn[/B]
-[IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/01-Ryube-Village.png[/IMG][/CENTER]
+[CENTER][B]Ryube Village & Sindar Ruins[/B]
+[IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/01-Ryube-Village.png[/IMG] [IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/02-Sindar-Ruins.png[/IMG][/CENTER]
 
-[CENTER][B]Exploring the mossy steps of Sindar Ruins[/B]
-[IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/02-Sindar-Ruins.png[/IMG][/CENTER]
+[CENTER][B]City Street & Cave of the Wind[/B]
+[IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/03-City-Street.png[/IMG] [IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/04-Cave-of-the-Wind.png[/IMG][/CENTER]
 
-[CENTER][B]A city street outside the inn[/B]
-[IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/03-City-Street.png[/IMG][/CENTER]
+[CENTER][B]Kuskus & Crom[/B]
+[IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/05-Kuskus.png[/IMG] [IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/06-Crom.png[/IMG][/CENTER]
 
-[CENTER][B]The entrance to Cave of the Wind[/B]
-[IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/04-Cave-of-the-Wind.png[/IMG][/CENTER]
+[CENTER][B]Greenhill & L'Renouille[/B]
+[IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/07-Greenhill.png[/IMG] [IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/08-LRenouille.png[/IMG][/CENTER]
 
-[CENTER][B]Kuskus waterfront and stone bridge[/B]
-[IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/05-Kuskus.png[/IMG][/CENTER]
+[CENTER][B]Mercenary Soldier & Headquarters Dialogue[/B]
+[IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/09-Mercenary-Soldier.png[/IMG] [IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/10-Headquarters-Dialogue.png[/IMG][/CENTER]
 
-[CENTER][B]Outside the stone inn in Crom[/B]
-[IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/06-Crom.png[/IMG][/CENTER]
+[CENTER][B]Equipment & Potch Menu[/B]
+[IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/11-Equipment.png[/IMG] [IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/12-Potch-Menu.png[/IMG][/CENTER]
 
-[CENTER][B]Greenhill garden paths[/B]
-[IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/07-Greenhill.png[/IMG][/CENTER]
+[CENTER][B]Blacksmith & Spider Slay[/B]
+[IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/13-Blacksmith.png[/IMG] [IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/14-Spider-Slay-Help.png[/IMG][/CENTER]
 
-[CENTER][B]Inside L'Renouille Castle[/B]
-[IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/08-LRenouille.png[/IMG][/CENTER]
-
-[CENTER][B]The corrected Mercenary Soldier speaker label[/B]
-[IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/09-Mercenary-Soldier.png[/IMG][/CENTER]
-
-[CENTER][B]Apple reports Shu's promise at Headquarters[/B]
-[IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/10-Headquarters-Dialogue.png[/IMG][/CENTER]
-
-[CENTER][B]Inspecting Riou's equipment in Sindar Ruins[/B]
-[IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/11-Equipment.png[/IMG][/CENTER]
-
-[CENTER][B]The field menu with spaced, capitalized Potch[/B]
-[IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/12-Potch-Menu.png[/IMG][/CENTER]
-
-[CENTER][B]Complete Potch labels in the blacksmith menu[/B]
-[IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/13-Blacksmith.png[/IMG][/CENTER]
-
-[CENTER][B]Spider Slay's corrected damage and repeat-use help[/B]
-[IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/14-Spider-Slay-Help.png[/IMG][/CENTER]
-
-[CENTER][B]Tuta after automatic Medicine healing[/B]
-[IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/15-Tuta-Medicine.png[/IMG][/CENTER]
-
-[CENTER][B]Victory and the ordinary battle reward sequence[/B]
-[IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/16-Victory.png[/IMG][/CENTER]
-
-[/SPOILER]
+[CENTER][B]Tuta Medicine & Victory[/B]
+[IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/15-Tuta-Medicine.png[/IMG] [IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/16-Victory.png[/IMG][/CENTER]
 
 [CENTER][SIZE=5][COLOR=#368E7B][B]Credits & Feedback[/B][/COLOR][/SIZE][/CENTER]
 
