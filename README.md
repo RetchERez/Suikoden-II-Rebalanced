@@ -1,69 +1,58 @@
-# Suikoden II: Rebalanced v1.1
+# Suikoden II: Rebalanced v1.2
 
-A combat rebalance and spelling cleanup for the original USA PlayStation release, by RetchERezzed
+A combat rebalance for the original USA PlayStation release, by RetchERezzed
 
-**[Download v1.1](https://github.com/RetchERez/Suikoden-II-Rebalanced/releases/download/v1.1/Suikoden-II-Rebalanced-v1.1.zip)** Â· [Installation](README.txt) Â· [Every change](README_EVERY_CHANGE.txt) Â· [Screenshots and capture notes](media/README.md)
+**[Download v1.2](https://github.com/RetchERez/Suikoden-II-Rebalanced/releases/download/v1.2/Suikoden-II-Rebalanced-v1.2.zip)** · [Installation](README.txt) · [Every change](README_EVERY_CHANGE.txt) · [Compatibility](COMPATIBILITY.md)
 
-![Eight Linux captures in a 9:16 portrait collage](media/Suikoden-II-Rebalanced-v1.1-Photo-Collage.png)
+## New in v1.2
 
-The rebalance gives more of the roster a useful role through selected growth improvements, earlier rune access, repeatable personal runes, and stronger underused Unites
+- Removes Clive's elapsed-playtime deadlines at Lakewest, Forest Village, Rockaxe, Radat and Sajah
+- Keeps the normal game clock running and preserves all existing combat, spelling and Potch changes
+- Retains story access, recruitment prerequisites and one-time quest flags; already failed saves are not automatically reset
 
-## Main changes
+The Clive change applies to eligible existing saves. You must still see the initial Muse encounter and satisfy the quest's other prerequisites
 
-- Selected growth improvements for 22 characters
-- Earlier head rune slots for Tuta, Millie, Hai Yo, and Hoi
-- Repeat use of Trick, Groundhog, and Spider Slay, with adjusted damage coefficients
-- Damage adjustments for Mayfly and Swallow
-- Coefficient increases for 14 named Unite families
-- The signed negative-Kindness fix, preserving its ordinary attack penalty
-- Two Headquarters exit-preload boundary repairs
-- Corrected Mercenary Soldier labels and reviewed spelling fixes throughout readable dialogue, descriptions, labels, and menus
-- Consistent Potch capitalization and spacing in currency text, with verified money-window width repairs
+## Included rebalance
 
-## New in v1.1
+- Selected growth improvements for 22 characters and earlier head rune slots for Tuta, Millie, Hai Yo and Hoi
+- Repeatable Trick, Groundhog and Spider Slay, with adjusted damage coefficients
+- Damage adjustments for Mayfly and Swallow, and coefficient increases for 14 Unite families
+- The standalone penalty-preserving negative-Kindness repair, two Headquarters preload repairs, corrected Mercenary Soldier labels, reviewed spelling, rune help and Potch formatting
 
-The combat configuration stays the same as v1.0
+## Install and saves
 
-The text cleanup fixes 177 duplicated rune descriptions and ten separate battle-help descriptions, then adds reviewed spelling, contraction, and text-fit corrections. The pass covers 1,071 readable resources using the observed English game font and ASCII, with independent review of punctuation and false positives. Character names, dialect, singing, and stammering are preserved
+Use your own legally sourced, untouched USA **SLUS-00958** single-track **MODE2/2352 BIN/CUE** matching [README.txt](README.txt). Apply v1.2 to the clean original, including when upgrading from v1.0 or v1.1; use a new output BIN and copied CUE
 
-Longer corrections sometimes use minor nearby wording or redundant spacing to retain the original text-slot size. The complete change list includes readable before-and-after passages and exact bytes for all 1280 guarded edits
+The ZIP contains exactly the xdelta patch, README.txt and README_EVERY_CHANGE.txt. No ROM, BIOS, emulator or save is supplied
 
-## Install
+Vanilla saves retain their growth/rune-slot table and already earned stats. A new game is recommended for the complete rebalance. Correctly migrated older Rebalanced saves need no further table migration. Restart the emulator and use normal saves rather than old emulator states
 
-Use your own legally sourced, untouched USA **SLUS-00958** single-track **MODE2/2352 BIN/CUE**. Follow [README.txt](README.txt) to verify the original hash, apply the xdelta patch to a separate BIN, update a copied CUE, and verify the result
+## Verification and limits
 
-The download ZIP contains exactly three files
+All previous 1280 guarded edits remain unchanged. The five new deadline instructions alter 10 payload bytes plus 220 CD-checksum bytes across five sectors; every other raw sector and the disc layout match v1.1. Deterministic encoding and an exact decode round-trip are verified
 
-- `Suikoden-II-Rebalanced-v1.1.xdelta`
-- `README.txt`
-- `README_EVERY_CHANGE.txt`
+Controlled Linux MIPS tests execute all five actual callbacks with only the allocator stubbed. 40 retail calibration cases and 340 candidate time cases check deadlines, late acceptance, clock/story guards and the callback ABI. These are separate from PS1 gameplay
 
-No game image, BIOS, emulator, memory card, or save state is included
+Native Linux PCSX-Redux compared the same normally prepared downloaded save after 15 hours: v1.1 rejected Radat's deadline and v1.2 allowed the event to progress. A normal post-event save was cold-loaded on v1.2 and retained quest progress. This is a save-based Radat comparison, not a full Clive campaign playthrough
 
-## Existing saves
+Earlier v1.1 evidence covers selected battles, a 108-star Suikoden I import with profile preservation, and the Gremio/Tir Banner intro. The remaining Tir quest, full campaign, every legal loadout/Unite variant, endings and real hardware remain unverified
 
-A new game is recommended for the complete rebalance. Vanilla saves retain their own growth/rune-slot table, and the patch does not retroactively increase earned stats. Save-migration tools are not part of this three-file package
+## Screenshots
 
-Correctly migrated v0.99/v1.0 saves need no further table migration for v1.1. Use normal in-game saves and restart the emulator on the v1.1 CUE; older emulator save states can retain cached code or menu text
+The [16-photo gallery](media/README.md) and photos-only eight-picture 9:16 collage were captured on v1.1, using Linux and normal controller input. Those combat/menu settings are unchanged in v1.2. Later locations may contain spoilers; the gallery is not a v1.2 Clive playthrough
 
-Apply v1.1 to a clean original, including when upgrading from v1.0. No previous patch is required
+![Eight-photo portrait collage captured on v1.1](media/Suikoden-II-Rebalanced-v1.1-Photo-Collage.png)
 
-## Verification
+## Optional external bug-fix pack
 
-The patch has deterministic encoding, an exact decode round-trip, source-preservation checks, and a byte audit confirming that the changes since v1.0 are confined to the documented text/UI-layout fields and CD checksums
+Rebalanced bundles only its existing standalone Kindness repair from Pyriel, not the complete GS2 Bug Fix Patch. The [per-file compatibility audit](COMPATIBILITY.md) confirms default upstream composition preserves our edits; a combined rebuilt image has not been emulated
 
-The existing Linux tooling suite passes 96 tests, and twelve new regression checks cover text, spelling, pointer layouts, opaque controls, and unchanged resources. An independent review checked the text changes and remaining dictionary matches
-
-The gallery contains 16 varied photos and an eight-picture 9:16 portrait collage, freshly captured in native Linux PCSX-Redux on the exact v1.1 image. Private copies of downloaded cards and normal controller inputs cover menus, battles, dialogue, and early-to-late locations. These checkpoint visits include possible spoilers; capture notes distinguish visible scenes from measured action effects
-
-Additional Linux checks accepted a genuine 108-star Suikoden I save on both vanilla and v1.1 cold boots, with the patched growth/rune-slot table preserved after import. A separate downloaded late-game save reached living Gremio's Banner dialogue and Tir's fishing encounter through normal controller input. These are separate checkpoint tests; the remaining rescue quest, its boss, Gregminster return, and optional departure dialogue branch remain unverified
-
-This release is ready for public testing. A full campaign, every legal recruitment/loadout/Unite combination, endings, and real hardware remain unverified. The spelling review is not a claim of a complete retranslation or universal grammatical perfection
+Apply **clean original → Rebalanced → upstream bugfix tool**, keeping Kindness set to **Penalty**. The **No Penalty** option intentionally overrides that behavior. Our clean-source xdelta does not accept an already bugfix-patched image
 
 ## Credits and feedback
 
-Rebalance by RetchERezzed. The negative-Kindness repair incorporates [Pyriel's published signed-penalty fix](https://github.com/pyriell/gs2-bugfixes), rather than the complete upstream collection
+Rebalance by RetchERezzed; the existing Kindness repair uses [Pyriel's isolated signed-penalty fix](https://github.com/pyriell/gs2-bugfixes). Additional thanks: Cloudstrife7894, Dyne
 
-For a bug report, include your emulator/version, location, party and levels, equipment, runes, patched BIN hash, save origin, and reproduction steps. Screenshots of remaining text issues are welcome
+For a bug report include emulator/version, location, party and levels, equipment, runes, save origin, patched BIN hash and reproduction steps
 
-v1.0 remains available as the earlier release. v1.1 is the latest version and adds the menu and spelling corrections documented in [CHANGELOG.md](CHANGELOG.md)
+Earlier releases remain available. See [CHANGELOG.md](CHANGELOG.md) for version history

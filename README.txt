@@ -1,4 +1,4 @@
-SUIKODEN II: REBALANCED v1.1
+SUIKODEN II: REBALANCED v1.2
 By RetchERezzed
 
 ABOUT THE PATCH
@@ -8,7 +8,16 @@ growth for 22 characters, four head-rune unlock levels, personal runes and
 14 named Unite families, and includes the documented Kindness, spelling
 and Headquarters preload fixes. README_EVERY_CHANGE.txt lists every edit.
 
-NEW IN v1.1
+NEW IN v1.2
+
+Removed Clive's five elapsed-playtime deadlines: Lakewest 11h, Forest Village 13h,
+Rockaxe 14h, Radat 15h and Sajah 20h. The normal game clock keeps running.
+Story access, recruitment prerequisites and one-time quest flags still apply.
+You must still see the initial Muse encounter. Already failed or completed
+quest flags are not reset; this does not automatically recover failed saves.
+The combat configuration and all v1.1 text/Potch corrections are unchanged.
+
+INCLUDED FROM v1.1
 
 Corrected 177 stale descriptions for Trick, Groundhog and Spider Slay across
 59 resource files, plus ten separate FST/SEC battle-help descriptions.
@@ -25,7 +34,7 @@ Two Chinchirorin windows shift eight pixels left to avoid overlapping frames.
 The v1.0 combat configuration is unchanged.
 
 This ZIP contains exactly:
-  Suikoden-II-Rebalanced-v1.1.xdelta
+  Suikoden-II-Rebalanced-v1.2.xdelta
   README.txt
   README_EVERY_CHANGE.txt
 
@@ -54,73 +63,87 @@ Apply the patch to the BIN, using a NEW destination filename. Substitute your
 actual original path in these examples. Keep the original untouched.
 
 Linux, with xdelta3 on PATH:
-xdelta3 -d -s "original.bin" "Suikoden-II-Rebalanced-v1.1.xdelta" "Suikoden II Rebalanced v1.1.bin"
+xdelta3 -d -s "original.bin" "Suikoden-II-Rebalanced-v1.2.xdelta" "Suikoden II Rebalanced v1.2.bin"
 
 Windows PowerShell, with xdelta3.exe in the extracted directory:
-.\xdelta3.exe -d -s "original.bin" "Suikoden-II-Rebalanced-v1.1.xdelta" "Suikoden II Rebalanced v1.1.bin"
+.\xdelta3.exe -d -s "original.bin" "Suikoden-II-Rebalanced-v1.2.xdelta" "Suikoden II Rebalanced v1.2.bin"
 
-Verify the resulting BIN against the v1.1 SHA-256 below. Copy your original
+Verify the resulting BIN against the v1.2 SHA-256 below. Copy your original
 CUE to a separate CUE beside the new BIN. In the copied CUE only, change
 the FILE entry to:
-FILE "Suikoden II Rebalanced v1.1.bin" BINARY
+FILE "Suikoden II Rebalanced v1.2.bin" BINARY
 
 Preserve all original TRACK and INDEX lines. Open that copied CUE in your
 emulator. A new game is recommended for the complete rebalance.
 
-v1.1 BIN SHA-256:
-e193bd3d03c41ef59e50da57d23c78a70fae0138742582f53f4c10096f8fcfb3
+v1.2 BIN SHA-256:
+6202e1b7ace94d75f2cce162e5391bbf8ccc6720c484fe98df3b6984904cfabc
 
 Patch SHA-256:
-87f183d394096cde947746d2bd96c85c3b40c7eadaa9fe62b709b01650a4442a
+f079d16f488216e25c3080c91f53d6a513e5ad765d2a44ae30fdbfe06b800db8
 
 UPGRADING AND EXISTING SAVES
 
-Apply v1.1 to your clean original, not to a v1.0 patched image. This is a
-complete vanilla-to-v1.1 patch, so no earlier patch is required.
+Apply v1.2 to your clean original, not to a v1.0/v1.1 patched image. This is a
+complete vanilla-to-v1.2 patch, so no earlier patch is required.
 
 Vanilla saves store their own growth/rune-slot table. Disc patching does not
 migrate that table or retroactively change earned stats. Save-migration tools
 are not included in this three-file package. A new game receives the complete
-configuration. Correctly migrated v0.99/v1.0 cards already have the matching
-growth/slot table and need no new table migration for v1.1.
+configuration. Correctly migrated v0.99/v1.0/v1.1 cards already have the matching
+growth/slot table and need no new table migration for v1.2.
 
-Use normal in-game saves. Restart the emulator on the v1.1 CUE to refresh
+Use normal in-game saves. Restart the emulator on the v1.2 CUE to refresh
 cached menu data. Do not carry emulator save states across versions.
 
 VERIFICATION AND LIMITS
 
-The v1.1 audit verifies every documented text/UI-layout edit and confirms that every
-other resource byte stays identical to v1.0, apart from CD checksums.
-The spelling scan covers 1071 readable ISO resources in game-font and ASCII
-encodings, with an independent punctuation-aware review. Names, dialect and
-binary/diagnostic false positives are reviewed rather than auto-corrected.
-19 non-Form1 audio/video resources are excluded from the text scan.
-The patch has deterministic repeat encoding, an exact decode round-trip and
-original-preservation checks. The existing Linux tooling suite has 96 tests;
-twelve new regression checks cover menus, spelling, currency, layout, controls, pointers
-and unchanged resources.
+The clean-original xdelta encodes identically twice and decodes to the exact
+v1.2 BIN hash. A whole-disc comparison against v1.1 confirms five guarded local
+instructions changed: 10 payload bytes plus 220 CD-checksum bytes, across five
+sectors. Every other raw sector, file length and disc-layout entry is identical.
+All previous 1280 guarded edits remain; the complete ledger now has 1285 edits.
 
-The underlying v1.0 evidence includes Linux PS1 native-engine measurements,
-selected downloaded-save battles and representative boss fights. v1.1 changes
-only documented text/UI-layout fields; it does not turn earlier bounded evidence into a
-new campaign certification. Current screenshots and their accompanying
-capture notes distinguish visible scenes from measured action effects.
+Controlled Linux MIPS tests execute the actual five deadline callbacks, with
+only the allocator stubbed. 40 original boundary cases and 340 candidate time cases
+verify cutoff semantics, late acceptance, unchanged clock/story guard bytes,
+stack, preserved registers and the actual callback result ABI. These controlled
+CPU tests are separate from PS1 gameplay.
 
-Additional Linux checks accepted a genuine 108-star Suikoden I save on both
-vanilla and v1.1 cold boots. The v1.1 growth/rune-slot table matched the patched
-image after import. On a separate genuine late-game imported save, normal
-controller input reached living Gremio's Banner blocker dialogue and Tir's
-fishing encounter. This is two separate checkpoint tests, not one uninterrupted
-playthrough from import. The remaining rescue quest, its boss and Gregminster
-return, plus the optional departure dialogue branch, remain unverified.
+Native Linux PCSX-Redux compared the same normally prepared downloaded save
+past 15 hours: v1.1 rejected the Radat deadline, while v1.2 allowed the event to
+progress. Normal controller input and private card copies were used; no guest
+clock, story, party or stat edits, cheats or state loads were used. Source
+history before download is unknown. This is a Radat checkpoint comparison,
+not an uninterrupted playthrough of all Clive scenes on v1.2. A normal
+post-event save was cold-loaded on v1.2 and retained the verified quest progress.
 
-Ready for public testing. Full campaign difficulty, every legal recruitment
-stage/loadout/Unite combination, endings and real hardware remain unverified.
-This is not a complete translation or the complete upstream retail bugfix suite.
+Earlier v1.1 checks cover selected battles, a 108-star Suikoden I import with
+patched-profile preservation, and the later living Gremio/Tir Banner intro.
+The rest of Tir's rescue/recruitment/combat test remains deferred. A full
+campaign, every recruitment/loadout/Unite variant, endings and real hardware
+remain unverified. The spelling pass is not a complete retranslation.
+
+OPTIONAL PYRIEL BUG-FIX PATCH COMPATIBILITY
+
+Rebalanced includes only the existing standalone penalty-preserving Kindness
+repair from Pyriel; it does not bundle the complete GS2 Bug Fix Patch.
+A per-file audit against upstream 2.02.078 confirms default patch composition
+preserves Rebalanced's edits. This is a static/private composition check;
+the combined rebuilt disc has not been tested in a PS1 emulator.
+Apply Rebalanced to the clean original FIRST. If you choose the external
+bug-fix pack, run its patcher AFTERWARD and keep Kindness set to Penalty.
+No Penalty intentionally changes Kindness behavior. Our clean-source xdelta
+does not accept an already bug-fix-patched image. See the repository's
+COMPATIBILITY.md for the precise audit scope and limitations.
+Upstream: https://github.com/pyriell/gs2-bugfixes
+
 For a bug report include emulator/version, location, party/levels, equipment,
 runes, reproduction steps, patched BIN hash and save origin.
 
 CREDITS AND DISTRIBUTION
+
+Additional thanks: Cloudstrife7894, Dyne
 
 Rebalance by RetchERezzed. The signed negative-Kindness repair incorporates
 Pyriel's published penalty-preserving fix from gs2-bugfixes, commit

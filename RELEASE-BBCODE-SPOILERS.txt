@@ -1,13 +1,13 @@
-[CENTER][SIZE=7][COLOR=#368E7B][B]Suikoden II: Rebalanced v1.1[/B][/COLOR][/SIZE]
+[CENTER][SIZE=7][COLOR=#368E7B][B]Suikoden II: Rebalanced v1.2[/B][/COLOR][/SIZE]
 [B]By RetchERezzed[/B]
 More party choices, useful runes, stronger Unites
 
 [IMG width="720px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-photos/media/Suikoden-II-Rebalanced-v1.1-Photo-Collage.png[/IMG]
 
-[SIZE=5][B][URL=https://github.com/RetchERez/Suikoden-II-Rebalanced/releases/download/v1.1/Suikoden-II-Rebalanced-v1.1.zip]Download v1.1[/URL][/B][/SIZE]
-[URL=https://github.com/RetchERez/Suikoden-II-Rebalanced]GitHub[/URL] · [URL=https://github.com/RetchERez/Suikoden-II-Rebalanced/releases/download/v1.1/Suikoden-II-Rebalanced-v1.1-Every-Change.txt]Every Change[/URL][/CENTER]
+[SIZE=5][B][URL=https://github.com/RetchERez/Suikoden-II-Rebalanced/releases/download/v1.2/Suikoden-II-Rebalanced-v1.2.zip]Download v1.2[/URL][/B][/SIZE]
+[URL=https://github.com/RetchERez/Suikoden-II-Rebalanced]GitHub[/URL] · [URL=https://github.com/RetchERez/Suikoden-II-Rebalanced/releases/download/v1.2/Suikoden-II-Rebalanced-v1.2-Every-Change.txt]Every Change[/URL][/CENTER]
 
-A USA PlayStation rebalance, with v1.1 menu, spelling, and Potch fixes.
+A USA PlayStation rebalance, now with Clive's elapsed-time deadlines removed.
 
 [CENTER][SIZE=5][COLOR=#368E7B][B]What Changes[/B][/COLOR][/SIZE][/CENTER]
 
@@ -19,7 +19,7 @@ A USA PlayStation rebalance, with v1.1 menu, spelling, and Potch fixes.
 [*][B]Negative Kindness fix[/B] Keeps the intended penalty without the attack-value wraparound
 [*][B]Headquarters repairs[/B] Two verified exit-preload boundaries corrected
 [*][B]Text cleanup[/B] Rune help, Mercenary Soldier labels, spelling, and Potch formatting
-[*][B]Full documentation[/B] All 1,280 guarded vanilla-to-v1.1 edits in the second readme
+[*][B]Full documentation[/B] All 1,285 guarded vanilla-to-v1.2 edits in the second readme
 [/LIST]
 
 [CENTER][SIZE=5][COLOR=#368E7B][B]Characters & Rune Access[/B][/COLOR][/SIZE][/CENTER]
@@ -94,7 +94,15 @@ Stored damage coefficients are shown below. Defense, targeting, status, and reco
 The Bandit Attack Cup of the Oath branches also change from 200% to 225%. The 100 Kobold damage coefficient remains at its original 300%, with its stale description corrected.
 [/SPOILER]
 
-[CENTER][SIZE=5][COLOR=#368E7B][B]New in v1.1[/B][/COLOR][/SIZE][/CENTER]
+[CENTER][SIZE=5][COLOR=#368E7B][B]New in v1.2[/B][/COLOR][/SIZE][/CENTER]
+
+[LIST]
+[*]Removed all five Clive deadlines: Lakewest, Forest Village, Rockaxe, Radat and Sajah
+[*]The game clock keeps running; combat and v1.1 corrections stay unchanged
+[*]Original story prerequisites still apply; already failed saves are not reset
+[/LIST]
+
+[CENTER][SIZE=5][COLOR=#368E7B][B]Included from v1.1[/B][/COLOR][/SIZE][/CENTER]
 
 [LIST]
 [*]Fixed 177 duplicate personal-rune descriptions across 59 resources
@@ -121,13 +129,13 @@ The Bandit Attack Cup of the Oath branches also change from 200% to 225%. The 10
 [B]A new game is recommended[/B]
 Vanilla saves keep their own growth/rune-slot table; disc patching does not migrate it or recalculate earned stats. Correctly migrated v0.99/v1.0 cards need no further table migration. Use normal saves instead of old emulator states.
 
-Apply v1.1 to a clean original even when upgrading. The ZIP contains only the patch and two readmes. No ROM, BIOS, emulator, or save is supplied.
+Apply v1.2 to a clean original even when upgrading. The ZIP contains only the patch and two readmes. No ROM, BIOS, emulator, or save is supplied.
 
 [CENTER][SIZE=5][COLOR=#368E7B][B]Screenshots & Verification[/B][/COLOR][/SIZE][/CENTER]
 
-16 genuine Linux captures: locations, dialogue, menus, and battles. The portrait collage contains eight pictures. These save-based checkpoint visits include possible spoilers.
+Gallery: 16 genuine v1.1 Linux captures and an eight-photo collage, with possible spoilers. Their combat/menu configuration is unchanged in v1.2.
 
-Build, reconstruction, text, and selected native battle checks passed. A 108-star Suikoden I save imported correctly and kept the patched growth table. A separate late-game save reached living Gremio and Tir's Banner fishing encounter normally. The remaining rescue quest, full campaign, every loadout/Unite variant, and real hardware remain unverified.
+All five Clive callbacks passed controlled MIPS tests. A separate 32-hour save failed Radat's deadline on v1.1 and progressed on v1.2 in Linux PS1 testing. Post-event save/reload also passed. Earlier v1.1 checks cover 108-star import and the Gremio/Tir intro. Full campaign, remaining Tir quest, every loadout and real hardware remain unverified.
 
 [SPOILER="16 photos — menus, battles, dialogue, and locations"]
 [CENTER][B]Ryube Village & Sindar Ruins[/B]
@@ -159,6 +167,10 @@ Build, reconstruction, text, and selected native battle checks passed. A 108-sta
 
 By RetchERezzed, incorporating [URL=https://github.com/pyriell/gs2-bugfixes]Pyriel's signed negative-Kindness fix[/URL].
 
+Pyriel's full bug-fix pack is not bundled. Per-file default compatibility was audited; see README for patch order and limits.
+
+Thanks: Cloudstrife7894, Dyne
+
 For bugs, include emulator/version, location, party, equipment, runes, save origin, and reproduction steps.
 
-[CENTER][B][URL=https://github.com/RetchERez/Suikoden-II-Rebalanced/releases/download/v1.1/Suikoden-II-Rebalanced-v1.1.zip]Download Suikoden II: Rebalanced v1.1[/URL][/B][/CENTER]
+[CENTER][B][URL=https://github.com/RetchERez/Suikoden-II-Rebalanced/releases/download/v1.2/Suikoden-II-Rebalanced-v1.2.zip]Download Suikoden II: Rebalanced v1.2[/URL][/B][/CENTER]

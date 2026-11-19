@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.2
+
+- Removed Clive's five local elapsed-playtime deadline checks at Lakewest, Forest Village, Rockaxe, Radat and Sajah
+- Kept the normal game clock, story prerequisites, one-time flags and all v1.1 combat/text/UI edits unchanged
+- Verified all five callback machine-code paths in controlled Linux CPU tests and a native same-save overtime Radat comparison
+- Verified ordinary post-event save and cold-reload persistence
+- Added a per-file compatibility audit against Pyriel's default bugfix options without importing the full collection
+- Retained the existing standalone Kindness Penalty fix; the optional external No Penalty variant intentionally overrides it
+- Updated the full 1285-edit ledger, save caveats and both compact BBCode posts
+
+Existing failed quest flags are not reset. The rest of the Gremio/Tir quest remains deferred. Combined bugfix-image gameplay and a full v1.2 campaign remain unverified
+
 ## v1.1
 
 - Project title updated to Suikoden II: Rebalanced with the tested game patch unchanged
