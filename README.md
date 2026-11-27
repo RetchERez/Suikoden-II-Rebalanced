@@ -1,62 +1,72 @@
-# Suikoden II: Rebalanced v1.2
+# Suikoden II: Rebalanced v1.3
 
-A combat rebalance for the original USA PlayStation release, by RetchERezzed
+By RetchERezzed
 
-**[Download v1.2](https://github.com/RetchERez/Suikoden-II-Rebalanced/releases/download/v1.2/Suikoden-II-Rebalanced-v1.2.zip)** · [Installation](README.txt) · [Every change](README_EVERY_CHANGE.txt) · [Compatibility](COMPATIBILITY.md)
+[Download v1.3](https://github.com/RetchERez/Suikoden-II-Rebalanced/releases/download/v1.3/Suikoden-II-Rebalanced-v1.3.zip)
 
-## New in v1.2
+A combat rebalance for the original USA PlayStation release, intended to make more party choices useful while keeping resource management relevant.
 
-- Removes Clive's elapsed-playtime deadlines at Lakewest, Forest Village, Rockaxe, Radat and Sajah
-- Keeps the normal game clock running and preserves all existing combat, spelling and Potch changes
-- Retains story access, recruitment prerequisites and one-time quest flags; already failed saves are not automatically reset
+## New in v1.3
 
-The Clive change applies to eligible existing saves. You must still see the initial Muse encounter and satisfy the quest's other prerequisites
+- Repairs missing Annallee Song, War Theme 1, War Theme 3 and Chant Song playback using canonical CD-XA metadata corrections. The existing audio samples and executable song filters are unchanged
+- Returns Meg’s Trick to **300% once per battle** and Millie’s Groundhog to **200% once per battle**. These stronger opening attacks trade away v1.2’s unlimited weaker casts; they are not a universal sustained-damage increase
+- Keeps Shin’s Spider Slay **repeatable at 200%**, Meg/Millie’s growth improvements and Millie’s head rune slot at level 30
+- Corrects the original **Winup** typo in all 60 Trick description copies, now reading **3x DMG 1 time only**
 
-## Included rebalance
+Enemy and boss numbers are unchanged. The encounter review remains a bounded evidence pass, not a completed whole-game difficulty rebalance.
 
-- Selected growth improvements for 22 characters and earlier head rune slots for Tuta, Millie, Hai Yo and Hoi
-- Repeatable Trick, Groundhog and Spider Slay, with adjusted damage coefficients
-- Damage adjustments for Mayfly and Swallow, and coefficient increases for 14 Unite families
-- The standalone penalty-preserving negative-Kindness repair, two Headquarters preload repairs, corrected Mercenary Soldier labels, reviewed spelling, rune help and Potch formatting
+## Included changes
+
+- Selected growth improvements for 22 characters; earlier head rune slots for Tuta at 25, Millie at 30, Hai Yo at 45 and Hoi at 35
+- Mayfly at 125%, Swallow at 150%, stronger coefficients for 14 Unite families and the Cup of the Oath Bandit branches, with matching descriptions
+- Clive’s five elapsed-playtime deadlines removed at Lakewest, Forest Village, Rockaxe, Radat and Sajah. The clock, initial Muse encounter, story prerequisites and one-time flags remain; already failed quest flags are not reset
+- The signed negative-Kindness repair, retaining its normal attack penalty; two Headquarters exit-preload repairs; 64 Mercenary Soldier label corrections
+- Reviewed spelling, rune help, Potch capitalization/spacing and money-window clipping repairs. This is not a full retranslation
+
+[CHANGELOG.md](CHANGELOG.md) preserves earlier release history. The packaged `README_EVERY_CHANGE.txt` lists every exact vanilla-to-v1.3 edit.
 
 ## Install and saves
 
-Use your own legally sourced, untouched USA **SLUS-00958** single-track **MODE2/2352 BIN/CUE** matching [README.txt](README.txt). Apply v1.2 to the clean original, including when upgrading from v1.0 or v1.1; use a new output BIN and copied CUE
+Use your own legally sourced, untouched USA **SLUS-00958**, single-track **MODE2/2352 BIN/CUE**. The source BIN must be **513,907,296 bytes**, with SHA-256:
 
-The ZIP contains exactly the xdelta patch, README.txt and README_EVERY_CHANGE.txt. No ROM, BIOS, emulator or save is supplied
+`acf1c55394797c4ef33bdb297cb4fcdefeb4885be84928ed5a82a0d7d3fcd472`
 
-Vanilla saves retain their growth/rune-slot table and already earned stats. A new game is recommended for the complete rebalance. Correctly migrated older Rebalanced saves need no further table migration. Restart the emulator and use normal saves rather than old emulator states
+Apply the complete v1.3 xdelta to that clean original, including when upgrading from an earlier Rebalanced release. Use a new output BIN; copy the original CUE, change only its `FILE` filename to the new BIN, retain its `TRACK`/`INDEX` lines and launch the copied CUE. Keep the original and save backups. Other regions/revisions, prepatched images and CHDs are unsupported patch inputs. The packaged `README.txt` contains the xdelta commands.
+
+The release ZIP contains exactly `Suikoden-II-Rebalanced-v1.3.xdelta`, `README.txt` and `README_EVERY_CHANGE.txt`. No ROM, BIOS, emulator, save or game audio is distributed.
+
+A new game is recommended for the complete rebalance. Vanilla saves keep their embedded growth/rune-slot table and already earned stats; patching the disc does not migrate either. Correctly migrated Rebalanced saves need no new table migration in v1.3. Migration tools are not included. Restart the emulator and use normal saves rather than carrying save states across versions.
 
 ## Verification and limits
 
-All previous 1280 guarded edits remain unchanged. The five new deadline instructions alter 10 payload bytes plus 220 CD-checksum bytes across five sectors; every other raw sector and the disc layout match v1.1. Deterministic encoding and an exact decode round-trip are verified
+The patch encodes deterministically and decodes to the exact patched BIN. All **1,215 logical edits** and **4,243 XA sector repairs** are guarded; whole-disc checks verify checksums, unchanged standalone layout and every unlisted raw byte.
 
-Controlled Linux MIPS tests execute all five actual callbacks with only the allocator stubbed. 40 retail calibration cases and 340 candidate time cases check deadlines, late acceptance, clock/story guards and the callback ABI. These are separate from PS1 gameplay
+Native Linux tests observed Meg/Millie’s first-use damage, same-battle blocking and new-battle reset, plus Shin’s repeat availability through victory and field return. Annallee’s first song passed the same-save 287-command native comparison with both SCPH-1001 and the supplied actual SCPH-5501 firmware: a matched 30-second wait contains song-correlated PCM on v1.3 and exact silence on vanilla. The other three tracks have routing and decoded-asset verification, rather than native scene replays.
 
-Native Linux PCSX-Redux compared the same normally prepared downloaded save after 15 hours: v1.1 rejected Radat's deadline and v1.2 allowed the event to progress. A normal post-event save was cold-loaded on v1.2 and retained quest progress. This is a save-based Radat comparison, not a full Clive campaign playthrough
+Mist Shade was beaten from a supplied level 4–5 save after nine planned rounds using finite owned resources, including 19 Medicine **charges**, following a no-Medicine loss. Sword was beaten in eight rounds with all six alive, using seven Medicine **charges** and finite MP. Its conservative policy is not a minimum-resource benchmark.
 
-Earlier v1.1 evidence covers selected battles, a 108-star Suikoden I import with profile preservation, and the Gremio/Tir Banner intro. The remaining Tir quest, full campaign, every legal loadout/Unite variant, endings and real hardware remain unverified
+Abomination was beaten in eight planned rounds with all six alive, using 16 Medicine charges and finite MP. Two survivors ended at 9 and 15 HP. Reward, post-boss dialogue and ordinary field movement were verified. An earlier policy lost; the retry differed in starting HP, resources and RNG, so this is not a controlled policy-only comparison. No extra training or equipment purchases were used. Four weapons were level 5; source gear, empty rune slots, legacy retail growth tables and conservative healing limit the difficulty assessment. These are observed costs, not minimum required resources or a whole-game balance certificate.
 
-## Screenshots
+Earlier selected boss, Suikoden I import and Gremio/Tir Banner-introduction checks remain qualified evidence. Supplied saves have unknown prior training/editing history.
 
-The [16-photo gallery](media/README.md) and photos-only eight-picture 9:16 collage were captured on v1.1, using Linux and normal controller input. Those combat/menu settings are unchanged in v1.2. Later locations may contain spoilers; the gallery is not a v1.2 Clive playthrough
-
-![Eight-photo portrait collage captured on v1.1](media/Suikoden-II-Rebalanced-v1.1-Photo-Collage.png)
+Diagnostics and resource-planning comparisons have documented AI, targeting, status, acquisition and phase limits. They do not establish battle win rates or a full PS1 simulation. A full campaign, every party/loadout/Unite variant, all quests, endings and real hardware remain unverified.
 
 ## Full GS2 Bug Fix Patch v2.02.078 compatibility
 
-The full default profile was combined with v1.2 and tested in native Linux PCSX-Redux: overdue Radat progression, normal post-event save and cold reload, retained quest progress and party, field movement, and two Spider Slay uses in one battle followed by victory and field return
+The optional default profile passed Linux data composition across **1,090 file payloads, 17 disc-address tables and 35 PPFs**, retaining all 1,215 Rebalanced edits. A combined mechanics build completed overdue Radat and an ordinary save; the final corrected combined image cold-loaded that save, retained flags/party and allowed field movement.
 
-All 32 default options were applied, including music repairs, Kindness Penalty and the default text passes. An independent check verified every file, all 17 disc-address tables, checksums and all 1285 Rebalanced edits
+Apply **clean original → Rebalanced → optional upstream tool**, keeping **Kindness Penalty**. The full pack remains external; standalone Rebalanced includes only its documented Kindness repair and four canonical music repairs. Windows installer execution, alternate options and every upstream fix are not certified. See [COMPATIBILITY.md](COMPATIBILITY.md) for exact evidence and limits.
 
-The private combined image used a Linux builder with the shipped patch data. The upstream Windows GUI/CD builder could not run under WSL1 and is not certified. Full campaign, every upstream fix and alternate option combinations remain unverified
+## Screenshots
 
-The standalone Rebalanced patch is unchanged and does not bundle the full pack. Apply **clean original -> Rebalanced -> upstream bug-fix tool**, keeping **Kindness Penalty**. See [COMPATIBILITY.md](COMPATIBILITY.md) for evidence and limits
+The existing [16-photo gallery](media/README.md) and **eight-photo 9:16 collage** are a **v1.1 archive**, captured in Linux with normal controller input. They may contain location spoilers and older rune values; use the v1.3 values above. No new images or GIFs accompany this release.
+
+![Eight-photo portrait collage — v1.1 archive](media/Suikoden-II-Rebalanced-v1.1-Photo-Collage.png)
 
 ## Credits and feedback
 
-Rebalance by RetchERezzed; the existing Kindness repair uses [Pyriel's isolated signed-penalty fix](https://github.com/pyriell/gs2-bugfixes). Additional thanks: Cloudstrife7894, Dyne
+[Pyriel’s gs2-bugfixes project](https://github.com/pyriell/gs2-bugfixes) supplies the original signed-penalty Kindness fix and canonical Music Fixes reference. Additional thanks: Cloudstrife7894, Dyne and community save authors whose checkpoints enabled the documented bounded tests.
 
-For a bug report include emulator/version, location, party and levels, equipment, runes, save origin, patched BIN hash and reproduction steps
+For a bug report, include emulator/version, location, party/levels, equipment/runes, save origin, patched BIN hash and reproduction steps.
 
-Earlier releases remain available. See [CHANGELOG.md](CHANGELOG.md) for version history
+The representative save-based review covers Mist Shade, Sword and Abomination, alongside qualified earlier encounter evidence. The target remains moderate challenge, varied parties and no extra grinding. No enemy or boss numerical/AI changes were made. Abomination was a difficult, healing-intensive win; source equipment, empty rune slots, legacy growth tables and a conservative player policy limit the inference. These results support retaining the current numbers for public testing; they do not certify moderate difficulty across the whole game or every party.

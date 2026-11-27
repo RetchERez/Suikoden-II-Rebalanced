@@ -1,121 +1,56 @@
 # Full GS2 Bug Fix Patch v2.02.078 compatibility
 
-Audited v1.2 BIN: `6202e1b7ace94d75f2cce162e5391bbf8ccc6720c484fe98df3b6984904cfabc`
+By RetchERezzed
 
-Source: [Pyriell gs2-bugfixes 2.02.078](https://github.com/pyriell/gs2-bugfixes/blob/e657ecafebdad2ed4c8e9031a8ab982fd506bf58/patcher.lua), revision `e657ecafebdad2ed4c8e9031a8ab982fd506bf58`. Local repository was clean and `git ls-remote origin HEAD` matched that revision.
+This describes the default optional full-pack composition and bounded native checks. The standalone Rebalanced download does not bundle the full pack or a combined game image.
 
-The original byte-level audit below is now supplemented by a private combined-image build and native Linux tests. The standalone Rebalanced patch still does not bundle the full pack
+## Sources and exact images
 
-## Combined-image Linux verification
+Upstream: [Pyriel’s gs2-bugfixes](https://github.com/pyriell/gs2-bugfixes), pinned revision [`e657ecafebdad2ed4c8e9031a8ab982fd506bf58`](https://github.com/pyriell/gs2-bugfixes/tree/e657ecafebdad2ed4c8e9031a8ab982fd506bf58).
 
-- Exact default profile: 32 selected options, 35 shipped PPFs, Kindness Penalty, Godspeed/Minotaur/Circlet text passes, including the full music repair
-- Combined BIN SHA-256: `3c037b9892875ed39c37e331c0e119ca1a103503310e88858a53c00e628ff6da`; the image remains private
-- Independently verified all 1090 file payloads, all 17 tables with 1090 size/LBA entries, all 1285 Rebalanced spans and every changed-sector checksum; no file extents overlap
-- Three files grow: VF05 by 176 bytes within its existing allocation, UWASA1/2 by 2521 bytes each and relocated into verified trailing padding with ISO records and all internal tables updated
-- Native PCSX-Redux cold boot and copied-save load, overdue Radat event progression and aftercare, ordinary Hilda save, fresh cold reload preserving quest flags/party, and working field movement
-- Separate native battle: Shin's Spider Slay executed twice in the same battle, each removing120 enemy HP, followed by victory and field return
-- All source images and input cards preserved; normal pad input and read-only observation, with no guest-memory edits or save-state loads; no screenshots were captured for these new tests
+| Artifact | SHA-256 |
+|---|---|
+| Clean USA source BIN | `acf1c55394797c4ef33bdb297cb4fcdefeb4885be84928ed5a82a0d7d3fcd472` |
+| Standalone v1.3 patched BIN | `5a5d01a66dd4b105463ee63201c9b193ddcb9bb53d8fe591cab582dca5a33120` |
+| Standalone xdelta, 130,800 bytes | `41c1b33ab8a6e760402729e79dabe138764daa0a560420c3efcac19b8018e2b3` |
+| Private final corrected combined BIN | `d2e9841892abf8687edb6cec51b505c30c7f37058c1af4a47b00844ab9cf17cb` |
 
-This combined image was built directly in Linux from the shipped default patch data. The upstream Windows GUI/CD builder failed to run in WSL1, so these tests do not certify that installer execution or its exact output layout. All raw media retain their original disc extents in the Linux test build. The standard patch order remains clean original -> Rebalanced -> upstream tool, with Kindness Penalty
+The standalone patch preserves the original disc layout. Its 1,215 logical edits and 4,243 repaired XA sectors account for 4,856 changed raw sectors and 103,878 differing raw bytes, including derived checksums. Deterministic repeat encoding, exact decode and source preservation pass.
 
-These are bounded compatibility checks. They do not playtest every upstream repair, every optional configuration, a full campaign or real hardware. RetroAchievements compatibility is not certified
+## Default Linux composition
 
-## Result
+The private combined image was built in Linux from the shipped default patch data: 32 selected options, 35 PPFs, Kindness Penalty and the Godspeed/Minotaur/Circlet text passes. Independent checks verify all 1,090 file payloads, all 17 disc-address tables with 1,090 entries each, retention of all 1,215 Rebalanced logical edits, normal raw-sector metadata/checksums and unchanged sectors outside the authorized writes.
 
-- All 1,285 Rebalanced manifest spans survive the actual default PPF selection followed by Godspeed, Minotaur and Circlet text passes in the installer order
-- The NA release contains 36 PPF files and 34 selectable options, of which 32 are selected by default. PPF40 is the custom format name, not a count of 40 patches
-- Default Kindness Penalty writes four bytes already identical in Rebalanced. No other default PPF overlaps any Rebalanced guarded span
-- Across both mutually exclusive Kindness alternatives, seven per-patch overlap bytes comprise six equal values and one different value. There are only four distinct overlapped addresses; these alternative counts must not be mistaken for a single default combination
-- No Penalty overlaps three Rebalanced bytes: two equal, one different at SLUS file offset `0x1E177` (`02` becomes `00`). It intentionally overrides the retained negative-Kindness penalty rather than silently preserving our balance choice
-- The other 34 PPF files have zero overlap with Rebalanced spans, including the five Clive branches
-- All 1,090 hardcoded FileList paths exist and exactly match the original and Rebalanced ISO inventories. File locations, sizes and directory layout are unchanged before running the upstream tool
-- All 17 LBA-table writes span 8,720 bytes each (1,090 entries). Their original and current bytes match, their first words pass the upstream sanity condition, and they overlap zero Rebalanced spans
+Three logical files grow: `VF05.BIN` by 176 bytes within its allocation and `UWASA1.BIN`/`UWASA2.BIN` by 2,521 bytes each, relocated into verified trailing padding. The corresponding ISO records and internal tables are updated; extents do not overlap. Normal XA subheaders and terminal EOF/EOR metadata were checked on the final corrected image.
 
-## Selectable-option matrix
+The canonical standalone music corrections match the corresponding shipped Music Fixes data and compose idempotently with it. The four requested file numbers are retained in the executable; duplicate XA subheader file numbers and derived Form2 EDCs are repaired. Audio samples are unchanged. The alternative four-byte executable-filter workaround must not be added to this canonical repair.
 
-“Disjoint” means no byte conflict was found; it is not full combined-gameplay validation. All optional upstream fixes remain external.
+## Bounded native checks
 
-| Upstream option | Default | Byte compatibility |
-|---|---|---|
-| Armor Attribute Fixes | Yes | Disjoint PPF writes |
-| Badeaux Appears | Yes | Disjoint PPF writes |
-| Castle Armory Fix | Yes | Disjoint PPF writes |
-| Castle Farm Fix | Yes | Disjoint PPF writes |
-| Chaco Bug Fix | Yes | Disjoint PPF writes |
-| Circlet Name Correction | Yes | Disjoint text replacement; no protected-byte overlap |
-| Collectibles Fix | Yes | Disjoint PPF writes |
-| Emilia Dialogue Fix | Yes | Disjoint PPF writes |
-| Forgiver Sign Fix | Yes | Disjoint PPF writes |
-| Godspeed Rune Name Correction | Yes | Disjoint text replacement; no protected-byte overlap |
-| Gozz Rune Renamed Minotaur Rune | Yes | Disjoint text replacement; no protected-byte overlap |
-| Gozz Rune Renamed Gozu Rune | No | Disjoint text replacement; no protected-byte overlap |
-| Gregminster Rune Shop Fix | Yes | Disjoint PPF writes |
-| Gremio Text Fix | Yes | Disjoint PPF writes |
-| GS1 Load - Names Fix | Yes | Disjoint PPF writes |
-| GS1 Load - Tai Ho Import | Yes | Disjoint PPF writes |
-| GS1 Load - Rune Import | Yes | Disjoint PPF writes |
-| Inns Fix | Yes | Disjoint PPF writes |
-| Join At 99 Fix | Yes | Disjoint PPF writes |
-| Kindness Rune Fix (No Penalty) | No | Intentional Kindness behavior override: 1 different byte; 2 equal |
-| Kindness Rune Fix (Penalty) | Yes | Already present: 4 identical bytes; idempotent |
-| Knife-thrower Fix | Yes | Disjoint PPF writes |
-| Lamb Fix (Unicorn Woods) | Yes | Disjoint PPF writes |
-| Luca Battle Party-change Fix | Yes | Disjoint PPF writes |
-| Matilda Gate Fix | Yes | Disjoint PPF writes |
-| Music Fixes | Yes | Disjoint PPF writes |
-| North Sparrow Escape Talisman Fix | Yes | Disjoint PPF writes |
-| Rope Climb - Turtle Plans #4 | Yes | Disjoint PPF writes |
-| Rune Speed Fix | Yes | Disjoint PPF writes |
-| Rune Unite Fix | Yes | Disjoint PPF writes |
-| Scroll Shop Display Fix | Yes | Disjoint PPF writes |
-| Tenzan Pass Enemies Fix | Yes | Disjoint PPF writes |
-| Tinto Glitch Fix | Yes | Disjoint PPF writes |
-| Trade Gossip Translation | Yes | Disjoint PPF writes |
+A combined mechanics build completed overdue Radat progression and an ordinary post-event save. The final corrected combined image then cold-loaded that same save, retained quest flags and party, advanced the saved clock from 32:53:00 to 32:53:08 and allowed normal field movement. All campaign save blocks remained byte-identical; one reserved card-header byte normalized on mounting. The later 60-description correction is independently audited as text/checksum-only relative to the mechanics-tested image.
 
-## Text replacements and growth
+Inputs were normal controller actions, with read-only RAM/card observations, no save-state loads and no guest gameplay writes. The final cold-load test completed its observations and its exact owned process was deliberately stopped and reaped; its controlled exit is not a runtime crash. Earlier host-wrapper cleanup time limits from the longer Radat trial remain recorded as host limitations. No screenshot or new media claim is made.
 
-| Pass | Eligible files | Matches in original and v1.2 | Protected-byte overlap |
-|---|---:|---:|---:|
-| circlet | 60 | 61 | 0 |
-| godspeed | 60 | 60 | 0 |
-| gozu | 61 | 60 | 0 |
-| minotaur | 61 | 60 | 0 |
+Standalone rune tests separately observed Meg/Millie first-use damage, same-battle blocking and new-battle reset. Shin’s second execution/availability was observed; these v1.3 checks do not claim a measured second damage hit. Earlier v1.2 combined battle evidence remains historical and is not substituted for a new final-image battle.
 
-The Minotaur variant replaces the five-byte `Gozz\0` slot with nine bytes. In all 60 actual v1.2 matches the following four bytes are zero padding, so this audited candidate has no new-data overwrite there. Godspeed and Circlet preserve the remaining string by shifting it one byte left and adding a terminator, matching the Lua code.
+## Music evidence and firmware identity
 
-Only these PPFs append bytes:
+All four repaired streams pass complete routing/EDC and nonzero decode checks. Annallee’s first South Window song additionally passed an exact 287-command replay from the same ordinary pre-song save on the standalone candidate and retail. Both reached matching field/story/script witnesses and post-song dialogue. A matched 30-second no-input window had candidate RMS 3710.30, versus exact retail silence; the candidate waveform correlated 0.99036 with the decoded Annallee asset. Private PCM is not distributed.
 
-| PPF / file | Before | After | Growth |
-|---|---:|---:|---:|
-| gremiotext.ppf / VF05.BIN | 324340 | 324516 | 176 |
-| uwasa_1.ppf / UWASA1.BIN | 5232 | 7753 | 2521 |
-| uwasa_2.ppf / UWASA2.BIN | 5232 | 7753 | 2521 |
+The original paired replay used native Linux Beetle with an existing **SCPH-1001** BIOS, SHA-1 `10155d8d6e6e832d6ea66db9bc098321fb5e8ebf`, privately named `scph5501.bin`; the core’s checksum warning was retained. A separate, completed pair used the supplied actual **SCPH-5501 USA** BIOS, SHA-1 `0555c6fae8906f3f09baf5988f00e55f88e9f30b`, accepted without a firmware warning. That pair repeated the same checkpoint, 287 commands/17,736 frames, nine matched native witnesses, identical 30-second PCM results and post-song dialogue, then shut down cleanly. The original reports remain unchanged. These are named-core/firmware results, not console-hardware or all-emulator certification. The other three music scenes have not received equivalent native scene replays.
 
-The checked G1LOAD, knife-thrower and Tenzan PPFs do not grow their logical files. The shipped Gremio PPF appends 176 bytes; the source assembly alone must not substitute for the actual PPF.
+## Patch order and options
 
-## Patch order and limitations
+Use **clean original USA image → Rebalanced xdelta → optional upstream tool**. Keep the default **Kindness Penalty** to preserve Rebalanced’s intended signed negative-rating behavior. **No Penalty** intentionally overrides it. Both the Kindness Penalty repair and the corresponding canonical music writes are already present where documented; the full pack supplies its other repairs externally.
 
-For this audited v1.2 candidate, the supported composition direction is: **clean original USA image → Rebalanced xdelta → upstream bugfix tool**, selecting the desired external fixes. Keep the default Kindness Penalty option to preserve Rebalanced’s existing Kindness behavior. The No Penalty choice is an explicit behavior override.
+The Rebalanced xdelta strictly requires the clean original hash. It cannot be applied to a previously rebuilt or bugfix-patched image. No reverse-order patch is supplied. Keep source/card backups, restart the emulator and use normal saves. Existing saves retain their embedded growth/rune-slot table and earned stats; a disc patch does not migrate those tables or reset failed Clive flags.
 
-Our xdelta is built against the clean original source hash. It is not a generic per-file merger and must not be applied to an image already rebuilt or modified by the bugfix tool. Reversing the order needs a separately constructed and tested patch for that exact source; none is provided.
+Upstream PPF application does not guard each original target byte, and its table warning does not stop a write. Other revisions, layouts, unrelated patches and alternate option combinations therefore need their own audit. Byte-disjoint writes alone do not certify combined gameplay.
 
-The upstream PPF format checks its header, offsets and bounds but has no original-byte validation. It will blindly overwrite target offsets. The LBA sanity warning also does not stop its table write. Applying it to another revision, reordered layout or unrelated patch combination is outside this audit. Upstream fixes can intentionally change gameplay on their own even where their bytes are disjoint from ours.
+## Limits and retained history
 
-The upstream rebuild changes file locations and regenerates internal LBA tables after selected files grow. This audit confirms those writes do not cover our edits; it does not execute the upstream ISO builder or certify every new scene, import behavior, combat/minigame fix, emulator or RetroAchievements use.
+The upstream Windows GUI/CD builder did not execute successfully in WSL. Linux data composition and bounded native routes do not certify that installer, its output layout, every external fix/option, all import behaviors, RetroAchievements, a full campaign or real hardware.
 
-## Implementation notes
+Enemy/boss numbers are unchanged. Mist’s finite-resource result and earlier selected encounters do not establish all-party difficulty or universal no-grind viability. Standalone Sword and Abomination victories are verified, with their finite-resource and source-party limits recorded in README.txt. These do not substitute for a final combined-image boss trial. Diagnostic AI/planner models retain documented targeting, status, acquisition and phase gaps.
 
-- The whole SLUS and SYSTEM.CNF files do not have to remain untouched: the installer checks their paths/existence, and this candidate safely changes SLUS at disjoint offsets. Our clean-source xdelta requirement remains strict
-- A numeric same-file/range warning is insufficient: actual writes are mostly disjoint even in armor, Rune Speed, Rune Unite, Forgiver Sign, inns and armory resources
-- The actual NA count is 36 PPFs / 34 options; the exact file list has 1,090 files
-- Actual append effects are three PPFs, not speculative growth of G1LOAD/VB18/VA11
-- The clean source and v1.2 both start BGM.XA at LBA343, and its entire 123,301,248-byte raw sector span is identical. LBA344 is mentioned in the installer comment, but the padding-sector creation call in that loop is commented out; the comment does not establish a forced rebuilt LBA
-- “Both patch orders work” is not supported for a clean-source raw-image xdelta
-- Download counts, ratings and RetroAchievements compatibility claims were not needed for this audit and are not certified
-
-## Evidence
-
-- [Pinned installer](https://github.com/pyriell/gs2-bugfixes/blob/e657ecafebdad2ed4c8e9031a8ab982fd506bf58/patcher.lua#L6696): LBA rewrite and warning behavior
-- [Pinned text passes](https://github.com/pyriell/gs2-bugfixes/blob/e657ecafebdad2ed4c8e9031a8ab982fd506bf58/patcher.lua#L6862): Godspeed/Gozz/Circlet behavior
-- [Pinned rebuild](https://github.com/pyriell/gs2-bugfixes/blob/e657ecafebdad2ed4c8e9031a8ab982fd506bf58/patcher.lua#L6995): source extraction and rebuild ordering
-- [Pinned PPF parser](https://github.com/pyriell/gs2-bugfixes/blob/e657ecafebdad2ed4c8e9031a8ab982fd506bf58/patcher.lua#L7288): no source-byte validation
+[CHANGELOG.md](CHANGELOG.md) preserves v1.2 and earlier evidence as version-specific history. Its old 1,285-edit counts and previous combined hashes describe those earlier images, not this release. Full source/card provenance and raw test artifacts remain private QA material.

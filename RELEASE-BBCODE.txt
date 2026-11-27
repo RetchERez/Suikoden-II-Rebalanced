@@ -1,30 +1,31 @@
-[CENTER][SIZE=7][COLOR=#368E7B][B]Suikoden II: Rebalanced v1.2[/B][/COLOR][/SIZE]
+[CENTER][SIZE=7][COLOR=#368E7B][B]Suikoden II: Rebalanced v1.3[/B][/COLOR][/SIZE]
 [B]By RetchERezzed[/B]
 More party choices, useful runes, stronger Unites
 
 [IMG width="720px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-photos/media/Suikoden-II-Rebalanced-v1.1-Photo-Collage.png[/IMG]
 
-[SIZE=5][B][URL=https://github.com/RetchERez/Suikoden-II-Rebalanced/releases/download/v1.2/Suikoden-II-Rebalanced-v1.2.zip]Download v1.2[/URL][/B][/SIZE]
-[URL=https://github.com/RetchERez/Suikoden-II-Rebalanced]GitHub[/URL] · [URL=https://github.com/RetchERez/Suikoden-II-Rebalanced/releases/download/v1.2/Suikoden-II-Rebalanced-v1.2-Every-Change.txt]Every Change[/URL][/CENTER]
+[SIZE=5][B][URL=https://github.com/RetchERez/Suikoden-II-Rebalanced/releases/download/v1.3/Suikoden-II-Rebalanced-v1.3.zip]Download v1.3[/URL][/B][/SIZE]
+[URL=https://github.com/RetchERez/Suikoden-II-Rebalanced]GitHub[/URL] · [URL=https://github.com/RetchERez/Suikoden-II-Rebalanced/releases/download/v1.3/Suikoden-II-Rebalanced-v1.3-Every-Change.txt]Every Change[/URL][/CENTER]
 
-A USA PlayStation rebalance, now with Clive's elapsed-time deadlines removed.
+A USA PlayStation rebalance with more party options, stronger Unites, Clive deadline removal and text fixes
 
-[CENTER][SIZE=5][COLOR=#368E7B][B]What Changes[/B][/COLOR][/SIZE][/CENTER]
+[CENTER][SIZE=5][COLOR=#368E7B][B]New in v1.3[/B][/COLOR][/SIZE][/CENTER]
 
 [LIST]
-[*][B]22 characters[/B] Selected growth improvements for physical, magic, and utility roles
-[*][B]Earlier head rune slots[/B] Tuta, Millie, Hai Yo, and Hoi
-[*][B]Repeatable personal runes[/B] Trick, Groundhog, and Spider Slay
-[*][B]Stronger Unites[/B] Coefficient increases for 14 named families
-[*][B]Negative Kindness fix[/B] Keeps the intended penalty without the attack-value wraparound
-[*][B]Headquarters repairs[/B] Two verified exit-preload boundaries corrected
-[*][B]Text cleanup[/B] Rune help, Mercenary Soldier labels, spelling, and Potch formatting
-[*][B]Full documentation[/B] All 1,285 guarded vanilla-to-v1.2 edits in the second readme
+[*][B]Missing music[/B] Canonical XA repairs for Annallee, War Theme 1, War Theme 3 and Chant
+[*][B]Meg[/B] Trick returns to 300% once per battle
+[*][B]Millie[/B] Groundhog returns to 200% once per battle, retaining her growth and earlier head-slot improvements
+[*][B]Shin[/B] Spider Slay remains repeatable at 200%
+[*][B]Clearer help[/B] Corrected the original Winup typo in all 60 Trick description copies
+[*][B]Encounter review[/B] Save tests and engine diagnostics target moderate challenge without extra grinding
 [/LIST]
+
+Meg and Millie trade unlimited weaker attacks for stronger first-use bursts
 
 [CENTER][SIZE=5][COLOR=#368E7B][B]Characters & Rune Access[/B][/COLOR][/SIZE][/CENTER]
 
-Growth changes affect future level gains; existing earned stats stay as saved.
+Selected growth improvements cover 22 characters and affect future level gains
+Existing earned stats stay as saved
 
 [LIST]
 [*][B]Shin[/B] HP and speed
@@ -52,7 +53,6 @@ Growth changes affect future level gains; existing earned stats stay as saved.
 [/LIST]
 
 [CENTER][B]Head Rune Slot Unlocks[/B][/CENTER]
-
 [LIST]
 [*]Tuta: level 35 → 25
 [*]Millie: level 35 → 30
@@ -63,14 +63,14 @@ Growth changes affect future level gains; existing earned stats stay as saved.
 [CENTER][SIZE=5][COLOR=#368E7B][B]Personal Runes & Unites[/B][/COLOR][/SIZE][/CENTER]
 
 [LIST]
-[*][B]Trick[/B] 300% → 175%, repeatable
-[*][B]Groundhog[/B] 200% → 150%, repeatable
-[*][B]Spider Slay[/B] 300% → 200%, repeatable
-[*][B]Mayfly[/B] 100% → 125%
-[*][B]Swallow[/B] 100% → 150%
+[*]Trick: 300%, once per battle
+[*]Groundhog: 200%, once per battle
+[*]Spider Slay: 300% → 200%, repeatable
+[*]Mayfly: 100% → 125%
+[*]Swallow: 100% → 150%
 [/LIST]
 
-Stored damage coefficients are shown below. Defense, targeting, status, and recoil rules still apply.
+Unite coefficients below are stored values — defense, targeting, status and recoil affect actual results
 
 [LIST]
 [*]Bandit Attack: 150% → 175%
@@ -90,48 +90,50 @@ Stored damage coefficients are shown below. Defense, targeting, status, and reco
 [/LIST]
 The Bandit Attack Cup of the Oath branches also change from 200% to 225%. The 100 Kobold damage coefficient remains at its original 300%, with its stale description corrected.
 
-[CENTER][SIZE=5][COLOR=#368E7B][B]New in v1.2[/B][/COLOR][/SIZE][/CENTER]
+[CENTER][SIZE=5][COLOR=#368E7B][B]Clive, Text & Quality of Life[/B][/COLOR][/SIZE][/CENTER]
 
 [LIST]
-[*]Removed all five Clive deadlines: Lakewest, Forest Village, Rockaxe, Radat and Sajah
-[*]The game clock keeps running; combat and v1.1 corrections stay unchanged
-[*]Original story prerequisites still apply; already failed saves are not reset
+[*]Removed the five Clive elapsed-time deadlines at Lakewest, Forest Village, Rockaxe, Radat and Sajah
+[*]Kept the normal clock, initial Muse encounter, story prerequisites and one-time flags — already failed saves are not reset
+[*]Retained the penalty-preserving negative-Kindness repair and two Headquarters exit-preload repairs
+[*]Reviewed spelling, Mercenary Soldier labels and rune help while preserving proper names and intentional dialect
+[*]Standardized Potch capitalization and spacing, including money-window clipping repairs
+[*]Documented all 1,215 logical vanilla-to-v1.3 edits and 4,243 XA sector repairs in the second readme
 [/LIST]
 
-[CENTER][SIZE=5][COLOR=#368E7B][B]Included from v1.1[/B][/COLOR][/SIZE][/CENTER]
+[CENTER][SIZE=5][COLOR=#368E7B][B]Installation & Saves[/B][/COLOR][/SIZE][/CENTER]
 
-[LIST]
-[*]Fixed 177 duplicate personal-rune descriptions across 59 resources
-[*]Fixed separate battle-help strings, including Mayfly and Swallow
-[*]Reviewed readable dialogue, descriptions, labels, and menus for spelling
-[*]Corrected identified misspellings, contractions, and misplaced apostrophes
-[*]Standardized Potch capitalization and spacing, with money-window clipping repairs
-[*]Preserved names, dialect, singing, and stammering
-[*]Kept text slots and disc layout intact; exact wording and bytes are documented
-[/LIST]
-
-[CENTER][SIZE=5][COLOR=#368E7B][B]Install & Play[/B][/COLOR][/SIZE][/CENTER]
-
-[CENTER][B]Requires your own untouched USA SLUS-00958 BIN/CUE[/B][/CENTER]
-
-[LIST]
-[*]Extract the download ZIP
-[*]Check the original BIN size and SHA-256 against README.txt
-[*][URL=https://github.com/jmacd/xdelta/releases]Apply the xdelta3 patch[/URL] to a clean original, using a new output BIN
-[*]Copy the original CUE and update its FILE entry to the patched BIN
-[*]Verify the patched hash, restart the emulator, and open the copied CUE
-[/LIST]
+Use your own legally sourced USA [B]SLUS-00958 MODE2/2352 BIN/CUE[/B] matching the README hash
+Apply v1.3 to the clean original, including when upgrading, with a new BIN and copied CUE
+ZIP contains exactly the patch and two readmes
 
 [B]A new game is recommended[/B]
-Vanilla saves keep their own growth/rune-slot table; disc patching does not migrate it or recalculate earned stats. Correctly migrated v0.99/v1.0 cards need no further table migration. Use normal saves instead of old emulator states.
+Vanilla saves keep their growth/rune-slot table and earned stats
+Correctly migrated Rebalanced saves need no new growth-table migration
+Restart the emulator and use normal saves
 
-Apply v1.2 to a clean original even when upgrading. The ZIP contains only the patch and two readmes. No ROM, BIOS, emulator, or save is supplied.
+[CENTER][SIZE=5][COLOR=#368E7B][B]Testing & Limits[/B][/COLOR][/SIZE][/CENTER]
 
-[CENTER][SIZE=5][COLOR=#368E7B][B]Screenshots & Verification[/B][/COLOR][/SIZE][/CENTER]
+Verified clean-source guards, patch round-trip, full disc differences and checksums
+Linux saves verify Meg/Millie first use, second-use blocking, new-battle reset and Shin repeat availability through victory
+Final text-only changes are independently audited
 
-Gallery: 16 genuine v1.1 Linux captures and an eight-photo collage, with possible spoilers. Their combat/menu configuration is unchanged in v1.2.
+Annallee’s same-save Linux playback comparison passed — v1.3 plays the song where vanilla is silent
+All four streams pass routing/decode checks; Mist, Sword and Abomination save trials reached victory
+Simulations have documented AI, status and acquisition limits
+Full campaign, every loadout, all quests and real hardware remain unverified
 
-All five Clive callbacks passed controlled MIPS tests. A separate 32-hour save failed Radat's deadline on v1.1 and progressed on v1.2 in Linux PS1 testing. Post-event save/reload also passed. Earlier v1.1 checks cover 108-star import and the Gremio/Tir intro. Full campaign, remaining Tir quest, every loadout and real hardware remain unverified.
+[CENTER][B]Full GS2 Bug Fix Patch v2.02.078 compatibility[/B][/CENTER]
+
+Verified default Linux composition across 1,090 files, 17 tables and 35 PPFs, retaining all Rebalanced edits
+Overdue Radat and ordinary save checks pass, including a cold reload on the final corrected combined image
+Apply Rebalanced first, then the optional external pack with Kindness set to Penalty
+Windows installer and every option are unverified — see README for exact scope
+
+[CENTER][SIZE=5][COLOR=#368E7B][B]Screenshots[/B][/COLOR][/SIZE][/CENTER]
+
+Archive gallery from v1.1, with possible spoilers — see the v1.3 rune values above
+Sixteen Linux photos and an eight-photo portrait collage
 
 [CENTER][B]Ryube Village & Sindar Ruins[/B]
 [IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/01-Ryube-Village.png[/IMG] [IMG width="320px"]https://raw.githubusercontent.com/RetchERez/Suikoden-II-Rebalanced/v1.1-rebalanced/media/02-Sindar-Ruins.png[/IMG][/CENTER]
@@ -160,15 +162,12 @@ All five Clive callbacks passed controlled MIPS tests. A separate 32-hour save f
 [CENTER][SIZE=5][COLOR=#368E7B][B]Special Thanks & Feedback[/B][/COLOR][/SIZE][/CENTER]
 
 [LIST]
-[*][URL=https://github.com/pyriell/gs2-bugfixes]Pyriel[/URL] for the original Kindness Rune fix
+[*][URL=https://github.com/pyriell/gs2-bugfixes]Pyriel[/URL] for the original Kindness Rune fix and canonical Music Fixes reference
 [*]Cloudstrife7894
 [*]Dyne
+[*]Community save authors whose checkpoints supported the documented tests
 [/LIST]
 
-[CENTER][B]Full GS2 Bug Fix Patch v2.02.078 compatibility[/B][/CENTER]
+For reports, include emulator, location, party, gear/runes, save origin, patch hash and reproduction steps
 
-Default-profile combined image tested in Linux: overdue Radat, save/cold reload and Spider Slay twice through victory. Full pack remains optional and external. Linux build used upstream patch data; Windows installer and full campaign unverified. See README for patch order and limits.
-
-For bugs, include emulator/version, location, party, equipment, runes, save origin, and reproduction steps.
-
-[CENTER][B][URL=https://github.com/RetchERez/Suikoden-II-Rebalanced/releases/download/v1.2/Suikoden-II-Rebalanced-v1.2.zip]Download Suikoden II: Rebalanced v1.2[/URL][/B][/CENTER]
+[CENTER][B][URL=https://github.com/RetchERez/Suikoden-II-Rebalanced/releases/download/v1.3/Suikoden-II-Rebalanced-v1.3.zip]Download Suikoden II: Rebalanced v1.3[/URL][/B][/CENTER]
